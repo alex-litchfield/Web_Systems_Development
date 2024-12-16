@@ -1,0 +1,41 @@
+{ 
+    "posts": [
+        {
+            "resource": "RPI Counseling Center", 
+            "description": "Come schedule an appointment at the RPI counseling center! Open Monday through Friday from 8am to 5pm (except 12pm to 1pm for a short lunch break). You can call (518)-276-6479 or come visit in Academy Hall 3000 Level, Suite 3200.",
+            "likes": "100",
+            "date-posted": "2024-09-28 04:15:56"
+        },
+        {
+            "resource": "Rensselaer Pride Alliance", 
+            "description": "RPA is devoted to promoting understanding, appreciation and pride in LGBT history and culture on the RPI's campus.",
+            "likes": "20",
+            "date-posted": "2024-09-29 04:15:56"
+        },
+        {
+            "resource": "Autism at Rensselaer",
+            "description": "A club for all autistic students on campus to socialize and advocate.",
+            "likes": "50",
+            "date-posted": "2024-09-30 04:15:56"
+        },
+        {
+            "resource": "Suicide Hotline",
+            "description": "Call 988",
+            "likes": "60",
+            "date-posted": "2024-09-30 04:15:56"
+        },
+        {
+            "resource": "The Steve Fund Crisis Text Line",
+            "description": "24/7 crisis text line for youth of color (text STEVE to 741741)",
+            "likes": "30",
+            "date-posted": "2024-10-01 04:15:56"
+        },
+        {
+            "resource": "National Sexual Assault Hotline",
+            "description": "Call 1-800-656-4673",
+            "likes": "30",
+            "date-posted": "2024-10-02 04:15:56"
+        }
+
+    ]
+}

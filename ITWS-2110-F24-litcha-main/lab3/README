@@ -1,0 +1,22 @@
+Worklog:
+
+1. Create lab3_database.sql (SQL file to handle database and table formatting) - (1, 2, 3)
+2. Create PHP files (handle fetching data from SQL database and inserting data into it) - (4, 5, 6)
+3. Create popup button that summons a page for users to replace exisiting displayed API data - (7, 8)
+4. Create javascript functions to handle the calling of the PHP files
+5. Create javascript functions to handle scenarios involving the popup menu interactions
+
+Summary/Notes:
+
+The worklog details what big tasks were completed and the order they were done in. Little formatting changes and alterations to existing
+javascript functions were not mentioned as they were done in conjunction or in response to bigger tasks mentioned above.
+
+Citations:
+1. https://www.w3schools.com/sql/sql_create_db.asp
+2. https://www.w3schools.com/sql/sql_create_table.asp
+3. https://www.w3schools.com/sql/sql_datatypes.asp
+4. https://www.w3schools.com/php/php_datatypes.asp
+5. https://www.w3schools.com/php/php_ajax_database.asp
+6. https://www.w3schools.com/php/php_ref_json.asp
+7. https://www.geeksforgeeks.org/how-to-create-a-popup-form-using-html-css-and-javascript/
+8. https://www.w3schools.com/howto/howto_js_popup_form.asp

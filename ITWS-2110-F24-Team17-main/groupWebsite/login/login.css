@@ -1,0 +1,84 @@
+#loginContainer {
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#loginButton {
+    background-color: #66BB66;
+    width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#loginButton:active {
+    background-color: #008800;
+    transform: scale(0.9);
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+#imageContainer img {
+    width: 65%;
+    height: 65%;
+}
+
+.inputBar {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.inputBar:active {
+    transform: scale(0.95);
+}
+
+h1{
+    text-align: center;
+}
+
+
+html {
+    width: 100%;
+}
+
+body {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#imageContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#resetPass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}

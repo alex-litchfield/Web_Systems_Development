@@ -1,0 +1,146 @@
+[
+  {
+    "clubs": [
+      {
+        "clubName": "Pickleball Club",
+        "memberCount": "50",
+        "descriptionVal": "Its tennis and smaller but ping pong and bigger!",
+        "locationVal": "Union",
+        "roomVal": "Student Union",
+        "startTime": "2024-11-27T14:00:00",
+        "dayOfWeek": "Wednesday",
+        "endTime": "2024-11-27T16:00:00"
+      },
+      {
+        "clubName": "Outing Club",
+        "memberCount": "34",
+        "descriptionVal": "We go on trips to explore the world!",
+        "locationVal": "Sage",
+        "roomVal": "Sage 3501",
+        "startTime": "2024-11-27T20:00:00",
+        "dayOfWeek": "Wednesday",
+        "endTime": "2024-11-27T21:00:00"
+      },
+      {
+        "clubName": "Chess Club",
+        "memberCount": "100",
+        "descriptionVal": "People play chess and are super toxic but we love it!",
+        "locationVal": "Union",
+        "roomVal": "Student Union",
+        "startTime": "2024-11-26T17:00:00",
+        "dayOfWeek": "Tuesday",
+        "endTime": "2024-11-26T19:00:00"
+      },
+      {
+        "clubName": "Rifle Club",
+        "memberCount": "12",
+        "descriptionVal": "We shoot airsoft guns at targets while socializing!",
+        "locationVal": "Armory",
+        "roomVal": "Armory bottom floor",
+        "startTime": "2024-11-25T17:00:00",
+        "dayOfWeek": "Monday",
+        "endTime": "2024-11-25T20:00:00"
+      },
+      {
+        "clubName": "Club Baseball",
+        "memberCount": "24",
+        "descriptionVal": "Competitive Baseball team that plays travel teams",
+        "locationVal": "Renwyck Field",
+        "roomVal": "Lower Renwyck Field",
+        "startTime": "2024-11-30T17:00:00",
+        "dayOfWeek": "Saturday",
+        "endTime": "2024-11-30T18:00:00"
+      },
+      {
+        "clubName": "Spaceflight Club",
+        "memberCount": "15",
+        "descriptionVal": "The RPI Spaceflight Society shall exist to promote the exploration and development of space, through educating people about the benefits of space, by supporting a network of interested students, by providing an opportunity for members to develop their leadership skills, and by inspiring people through involvement in space-related projects.",
+        "locationVal": "JEC",
+        "roomVal": "JEC 2845",
+        "startTime": "2024-11-25T19:00:00",
+        "dayOfWeek": "Monday",
+        "endTime": "2024-11-25T21:00:00"
+      },
+      {
+        "clubName": "Game Development Club",
+        "memberCount": "25",
+        "descriptionVal": "We are the RPI Game Development Club. We run weekly meetings that range from workshops, guest speakers, hangouts, presentations and everything else game development related. Our club runs multiple Game Jams and the annual Rensselaer Game Showcase. For more information PLEASE CONTACT our club officers: President Jacob Idema idemaj@rpi.edu",
+        "locationVal": "Sage",
+        "roomVal": "Sage 2404",
+        "startTime": "2024-11-27T20:00:00",
+        "dayOfWeek": "Wednesday",
+        "endTime": "2024-11-27T21:00:00"
+      },
+      {
+        "clubName": "The Rusty Pipes",
+        "memberCount": "13",
+        "descriptionVal": "The Rusty Pipes is a co ed acapella group here at RPI! We perform at events on campus, and locally in Troy and Albany as well as participate in competitions around the Northeast.",
+        "locationVal": "EMPAC",
+        "roomVal": "EMPAC",
+        "startTime": "2024-11-30T17:00:00",
+        "dayOfWeek": "Saturday",
+        "endTime": "2024-11-30T18:00:00"
+      },
+      {
+        "clubName": "RPI-Sage Hillel",
+        "memberCount": "52",
+        "descriptionVal": "Hillel is the Jewish student organization serving the students of Rensselaer Polytechnic Institute and the Russell Sage College Troy campus.",
+        "locationVal": "Union",
+        "roomVal": "Union 3536",
+        "startTime": "2024-11-29T18:30:00",
+        "dayOfWeek": "Friday",
+        "endTime": "2024-11-29T19:30:00"
+      },
+      {
+        "clubName": "Active Minds",
+        "memberCount": "21",
+        "descriptionVal": "Active Minds seeks to start open conversations about mental health and mental illness with a focus on student issues. We aim to educate students about mental health and available resources and to bring attention to the issues prevalent in our community. We host weekly meetings and larger events, such as our annual Stronger Than The Stigma event, and collaborate with other organizations on- and off-campus to reach a wide audience in an effort to end the stigma surrounding mental illness.",
+        "locationVal": "Union",
+        "roomVal": "Union 3536",
+        "startTime": "2024-11-27T18:00:00",
+        "dayOfWeek": "Wednesday",
+        "endTime": "2024-11-27T20:00:00"
+      },
+      {
+        "clubName": "The Polytechnic",
+        "memberCount": "19",
+        "descriptionVal": "The Polytechnic is the student-run news organization of Rensselaer Polytechnic Institute. We publish a variety of articles ranging from campus news and reviews to opinion pieces and sports on our website weekly.",
+        "locationVal": "Union",
+        "roomVal": "Union 3421",
+        "startTime": "2024-11-24T13:00:00",
+        "dayOfWeek": "Sunday",
+        "endTime": "2024-11-24T14:00:00"
+      },
+      {
+        "clubName": "Embedded Hardware Club",
+        "memberCount": "10",
+        "descriptionVal": "We have a shop where students can work on electronics projects, and we also host fun workshops!",
+        "locationVal": "JEC",
+        "roomVal": "JEC 2401",
+        "startTime": "2024-11-27T18:00:00",
+        "dayOfWeek": "Wednesday",
+        "endTime": "2024-11-27T19:00:00"
+      },
+      {
+        "clubName": "RPI Ambulance",
+        "memberCount": "29",
+        "descriptionVal": "RPI Ambulance is a student run and operated Basic Life Support (BLS) transporting ambulance agency that serves the RPI campus and surrounding communities. We also provide training and educational programs for members of the organization and RPI community.",
+        "locationVal": "PubSafe Office",
+        "roomVal": "PubSafe Office",
+        "startTime": "2024-12-01T17:00:00",
+        "dayOfWeek": "Sunday",
+        "endTime": "2024-12-01T18:00:00"
+      },
+      {
+        "clubName": "HackRPI",
+        "memberCount": "73",
+        "descriptionVal": "HackRPl is the student organizations that hosts the annual intercollegiate hackathon at Rensselaer Polytechnic Institute. We are a collective of RPI students who share a passion for exploring the bounds of computer science and pushing the limits of what students can do. Fall 2020 will be our seventh hackathon and through our experiences, we have seen what makes hackathons so awesome and what we can do to take the hackathon experience to the next level. Our goal is to inspire and challenge innovators, developers, creators, and entrepreneurs in New York’s Tech Valley and beyond. We will help attendees develop their skills, explore new technologies, and turn their curiosities and visions into opportunities. Staying true to our mantra “why not code the world?”, we strive to solve challenging real world problems in order to generate tangible outcomes. ln our six years, we dedicated significant efforts towards reaching this goal. We have dedicated ourselves to ensuring that HackRPl meets our own high expectations; admittedly, we cannot achieve greatness on our own—we need your help",
+        "locationVal": "DCC",
+        "roomVal": "DCC 308",
+        "startTime": "2024-12-02T20:00:00",
+        "dayOfWeek": "Monday",
+        "endTime": "2024-12-02T21:00:00"
+      }
+    ]
+  }
+]

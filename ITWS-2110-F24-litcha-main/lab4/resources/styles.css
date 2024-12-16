@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./cloud-img-ai.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(204, 153, 255, 0.5); /* More transparent */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid black; /* Increased border size */
+}
+
+.navbar-title {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem; /* Keep "Live Weather Application" larger */
+}
+
+.blue-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Increased padding size */
+  font-size: 0.9rem; /* Smaller text */
+  cursor: pointer;
+  border-radius: 10px; /* Rounder corners */
+}
+
+.blue-button:hover {
+  background-color: darkblue;
+}
+
+/* Content Styling */
+.content {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0; /* No space between top row and bottom box */
+}
+
+/* Top Row Boxes */
+.top-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  margin-top: 20px; /* Added margin between navbar and top row */
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.5); /* More transparent */
+  border: 4px solid black; /* Increased border size */
+  border-radius: 15px; /* Rounder border radius */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 130%; /* 30% width increase */
+}
+
+/* Top Left Box Text Styling */
+.top-left-text {
+  font-size: 2.0rem; /* Increased text size significantly */
+  text-align: center;
+  line-height: 2rem; /* Spaced out text inside the box */
+}
+
+.top-left .coordinates p {
+  font-size: 1.5rem; /* Slightly increased size for coordinates */
+}
+
+.location-name {
+  font-size: 2.25rem; /* 1.5 times larger than 1.5rem coordinates size */
+  font-weight: bold; /* Boldface */
+}
+
+.top-middle {
+  text-align: center;
+}
+
+.top-middle h3 {
+  font-size: 1.5rem; /* Adjusted font size for the title */
+}
+
+.top-middle p {
+  font-size: 1.2rem; /* Adjusted font size for all paragraphs */
+}
+
+.top-right img {
+  width: 50%;
+  height: auto;
+}
+
+/* Bottom Box */
+.bottom-box {
+  background-color: rgba(255, 255, 255, 0.5); /* More transparent */
+  border: 4px solid black; /* Increased border size */
+  border-radius: 15px; /* Rounder border radius */
+  width: 56%; /* Reduced width by 30% */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; /* Increased padding */
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px; /* Added margin above bottom box */
+}
+
+/* Columns inside Bottom Box */
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased vertical spacing */
+  font-size: 1.7rem; /* Larger font size */
+}
+
+.left-column {
+  align-items: flex-start; /* Align items to the left */
+  width: 50%;
+}
+
+.right-column {
+  align-items: flex-end; /* Align items to the right */
+  width: 50%;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px; /* Rounder corners */
+}
+
+.cancel-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px; /* Rounder corners */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+}

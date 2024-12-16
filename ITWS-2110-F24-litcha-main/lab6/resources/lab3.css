@@ -1,0 +1,391 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-image: url("./cloud-img-ai.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.navBarFooterDefaults {
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(204, 153, 255, 0.5);
+    color: black;
+    font-weight: bold;
+}
+
+#navBar{
+    border-bottom: 6px solid rgb(0, 0, 0);
+    flex-direction: row;
+}
+
+#footerContent {
+    border-top: 6px solid rgb(0, 0, 0);
+    flex-direction: column;
+}
+
+.topFooterItems {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.BottomFooterItems {
+    display: flex;
+    flex-direction: row;
+}
+
+.topFooterItems a img {
+    max-height: 50px;
+    width: auto;
+}
+
+.footerItem {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+}
+
+.transitionableItem {
+    transition: transform 0.3s ease; /* Creates the transition effect */
+}
+
+.transitionableItem:hover {
+    transform: scale(1.2); /* Increases the font size by 20% of what it currently is */
+}
+
+#titleName{
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#pageContent{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#pageContent p {
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease; /* Creates the transition effect */
+}
+
+#pageContent p:hover {
+    color: rgb(118, 47, 189);
+    transform: scale(1.1); /* Increases the font size by 10% of what it currently is */
+}
+
+#pokemonImage {
+    transition: transform 0.3s ease; /* Creates the transition effect */
+}
+
+#pokemonImage:hover {
+    transform: scale(1.1); /* Increases the font size by 10% of what it currently is */
+}
+
+#upperBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;   
+}
+
+#upperBoxInfoContainer{
+    width: 20%;
+    aspect-ratio: 1;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.open-tooltip {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10; /* Allows the tooltip button to be placed on top of other items in a given container */
+}
+
+.locationInfoDetails{
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#pokemonBox{
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+}
+
+#weatherInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.innerWeatherContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#weatherInfoLeft{
+    display:flex;
+    flex-direction:column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#weatherInfoRight{
+    display:flex;
+    flex-direction:column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.weatherInfoDetails{
+    font-size: 130%;
+}
+
+#pokemonInfoContainer{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid rgb(0, 0, 0);
+    position: relative;
+}
+
+#pokemonPictureBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-left: 3px solid rgb(0, 0, 0);
+    position: relative;
+}
+
+.pokemonInfoDetails {
+    margin: 0.5em;
+    font-size: 130%;
+}
+
+.infoTitle {
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.info-popup-content .infoTitle {
+    margin-top: 0;
+}
+
+#cityName {
+    margin-top: 64px;
+}
+
+#pokemonImage {
+    height: auto;
+    width: 50%;
+}
+
+.locationSearchBar input[type="text"] {
+    padding: 6px;
+    margin: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.popup {
+    display: none;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.popup-content {
+    background-color: rgb(203, 202, 202);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.popup-content-divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin: 10px 0;
+}
+
+.popup input[type="text"] {
+    margin: 10px 10px;
+    width: 30%; /* Make input fields take full width */
+    padding: 10px;
+}
+
+.popup-header-top {
+    font-size: 200%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.popup-header-mini {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.popup-header-subtitle {
+    font-size: 130%;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#popup-header-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popup-top-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.popup-header-top-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 32px 64px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+.popup button.cancel {
+    background-color: #dc3545;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+#popup-button-right {
+    justify-content: right;
+    margin-right: 30px;
+}
+
+#popup-button-left {
+    justify-content: left;
+    margin-left: 30px;
+}
+
+#openPopupBtn, #pokemonFactBtn {
+    margin: 20px;
+}
+
+#navBar button {
+    border-radius: 10px; /* Rounder corners */
+    background-color: blue;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.infoDisplayBox {
+    display: flex;
+    background:#94bfee96;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 15px; /* Rounder border radius */
+}
+
+button, input {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.info-popup-startup, .general-info-popup {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Makes the background of the page semi transparent */
+    z-index: 10000; /* Places the popup menu in front of other page content */
+}
+
+.info-popup-startup {
+    display: flex;
+}
+
+.general-info-popup {
+    display: none;
+}
+
+.info-popup-content {
+    background-color: #ffffffeb;
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-info-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-info-popup:hover {
+    color: red;
+}

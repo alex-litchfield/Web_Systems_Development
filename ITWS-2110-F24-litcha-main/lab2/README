@@ -1,0 +1,20 @@
+Summary:
+
+In order to create this lab I drew out what I wanted the page to look like in microsoft paint to ensure that I knew what the finished product should look like. Once I did that, I began to create the html and css layout for the page. I knew that I wanted to use the openWeatherMap API (1), geolocation API (2), and a third API that I hadn't decided on yet (3). The geolocation API would be used to allow the user's browser to provide a location to the website. However, I also wanted to add a manual search function for locations, which is when I needed to look up how forms worked on HTML (4). While fetching the data from openWeatherMap API, I realized I didn't know how to convert the timezone numbers into readable data, which is when I decided to try and teach myself how to do the conversion and perform it in the codebaee (5). Finally, I decided that for my 3rd API I would use Air Quality API, though after extensive attempts to use the data from openWeatherMap to perform reverse searchs in the Air Quality API, I decided to do a different approach. I looked up free APIs using a github repository that listed many of them (7). I decided upon Poke API, since it looked a bit more challenging to attempt to parse the data that I would be retrieving. Once I had fetched all the data, I realized that I would need to both find a way to replace the first letter of the data that was conveyed through words since it wasn't already. This was a simple enough task, but I also needed to find out how to perform this task on each item in an array. I opted to attempt to use something I had not prior in an IT course, which brought me to the usage of maps (8). Following that I learned how to use the join() method (9). I also ran into an issue with the pokemonImage as I needed to have a default image prior to the loading of the one from the API to prevent an HTML validation error, which I fixed by using a "loading" gif with a transparent background.
+
+Items from openWeatherMap: 8
+Items from PokeAPI: 7
+
+Citations:
+
+(1)     https://openweathermap.org/current#data
+(2)     https://www.w3schools.com/html/html5_geolocation.asp
+(3)     https://pokeapi.co/
+(4)     https://www.w3schools.com/html/html_forms.asp
+(5)     https://savvytime.com/converter/utc
+(6)     https://www.freepublicapis.com/air-quality-api
+(7)     https://github.com/public-apis/public-apis
+(8)     https://www.w3schools.com/jsref/jsref_map.asp
+(9)     https://www.w3schools.com/jsref/jsref_join.asp
+(10)     https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif
+(11)    https://www.treehugger.com/thmb/z9XWueIDAUQI6QvXfCR6JyuFzl8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2018__08__CollectionOfCloudsAgainstABlueSky-8cae9f3109d14dcf98d9facc5775222f.jpg 

@@ -1,0 +1,51 @@
+[
+  {
+    "locations": [
+      {
+        "name": "Student Union",
+        "longitude": "-73.6767304762219",
+        "latitude": "42.730041547665664"
+      },
+      {
+      "name": "Sage",
+      "longitude": "-73.68161995759995",
+      "latitude": "42.730981063825865"
+      },
+      {
+        "name": "Armory",
+        "longitude": "-73.67707094316222",
+        "latitude": "42.72912103451693"
+      },
+      {
+        "name": "Renwyck Field",
+        "longitude": "-73.66872636087608",
+        "latitude": "42.734851701761464"
+      },
+      {
+        "name": "JEC",
+        "longitude": "-73.68012708785804",
+        "latitude": "42.729808272212416"
+      },
+      {
+        "name": "EMPAC",
+        "longitude": "-73.68421188971286",
+        "latitude": "42.72908167415128"
+      },
+      {
+        "name": "Union",
+        "longitude": "-73.67666610320359",
+        "latitude": "42.73006519054735"
+      },
+      {
+        "name": "PubSafe Office",
+        "longitude": "-73.6769961166944",
+        "latitude": "42.729366005934665"
+      },
+      {
+        "name": "DCC",
+        "longitude": "-73.67933413054539",
+        "latitude": "42.72932025645278"
+      }
+    ]
+  }
+]

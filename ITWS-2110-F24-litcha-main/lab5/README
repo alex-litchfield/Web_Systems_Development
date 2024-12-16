@@ -1,0 +1,30 @@
+Security Measures added (only affecting files in the lab5 folder):
+
+1. CSP (Content Security Policy) Meta Tags
+    In index.html, I added a CSP Meta Tag which will prevent unauthorized scripts, stylesheets, images, and APIS from running on the website. Specifically, it will help detect and mitigate certain attacks, such as Cross Site Scripting (XSS) and data injection attacks.
+2. CSP (Content Security Policy) Headers
+    In each of the PHP files I added a CSP header which prevents unauthorized scripts, stylesheets, images, and APIS from running through the file. Specifically, it will help detect and mitigate certain attacks, such as Cross Site Scripting (XSS) and data injection attacks.
+3. CSP (Content Security Policy) Headers
+    In the VM apache2 config I added a CSP header which prevents unauthorized scripts, stylesheets, images, and APIS from running through the file. Specifically, it will help detect and mitigate certain attacks, such as Cross Site Scripting (XSS) and data injection attacks on the lab5 section of the website.
+4. ACA (Access Control Allow) Headers
+    In each of the PHP files I added ACA headers that only allow request from the VM root domain. In getPokemonData.php and getWeatherData.php, I used an ACA header which only allows GET requests, since the data is meant to be read only. In insertPokemomnData.php and insertWeatherData.php, I used an ACA header which only allows POST requests, since the data is meant to be write only.
+
+Security Measurers that were already implemented (and are still active):
+
+1. HTTPS certificate was installed onto the VM to ensure that the HTTP is not used when the website is loaded.
+2. IAM (Identity Access Management): 
+    Roles assignments exist on the VM that grant specific users certain permissions. Besides myself, all roles were inherited from either the Subscription, the Parent Resource, the Management group, or the Root. The "Owner" role, which "grants full access to manage all resources, including the ability to assign roles in Azure RBAC", is assigned to myself, Dr. Callahan, Josh Cherry, Eleish Ahmed, and Professor Plotka. The "DevTest Labs Advanced User", which "grants start/stop privileges to all VMs", is assigned to each of the TA's. The "DevTest Labs User" role, which "lets you connect, start, restart, and shutdown your virtual machines in your Azure DevTest Labs", is assigned to the group "AZ_ITWS_DTL_STUDENT". The "Security Admin" role is assigned to Josh Cherry. The User Access Administrator role, which "Lets you manage user access to Azure resources", is assigned to Jason Purificato. This role based assignments ensures random users cannot access the VM and all its permissions.
+3. MFA (Multi Factor Authentication): 
+    Since my VM account is set up through my RPI email, the VM account also uses multi factor authentication through Cisco Duo in order to sign in.
+4. SQL Injection Prevention: 
+    On insertPokemonData.php and insertWeatherData.php, line 36-37 have an INSERT INTO statment followed by a VALUES statement. These lines define the structure of the SQL statement, and due to the use of '?' as a placeholder to show where the data will go, no actual data is used as part of the current query. Lines 40-55 in insertPokemonData.php and lines 40-61 in insertWeatherData.php bind the actual values to the '?' placeholders. Since the structure was already defined in lines 36-37, the values inserted are treated as pure data, or in this case strings. As of now, if a user were to attempt an SQL injection on the input value for "Pokemon Name", the user would see the SQL injection line displayed as a string in the "Pokemon Name" line of the website. However, no code would actually be executed. This also prevents malicious code from being provided directly from the allowed APIs. 
+
+Citations:
+
+1. https://drive.google.com/file/d/1jWzd3wrQHyUmQevr4CuAjChARvraseKb/view
+2. https://www.w3schools.com/tags/att_meta_http_equiv.asp
+3. https://www.w3schools.com/php/func_regex_preg_match.asp
+4. https://www.w3schools.com/php/func_network_header.asp
+5. https://web.dev/articles/csp
+6. https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
+7. https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin

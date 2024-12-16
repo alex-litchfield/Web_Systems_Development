@@ -1,0 +1,272 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-image: url("./clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navBar{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background:#7c57b9b8;
+    border-bottom: 6px solid rgb(0, 0, 0);
+}
+
+#titleName{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#pageContent{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#upperBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#upperBoxInfoContainer{
+    width: 20%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid rgb(0, 0, 0);
+    background:#6fa0d5b8;
+}
+
+.locationInfoDetails{
+    font-size:150%;
+    font-weight: bold;
+}
+
+#cityName{
+    font-size:250%;
+}
+
+#pokemonBox{
+    border: 6px solid rgb(0, 0, 0);
+    background:#6fa0d5b8;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#weatherInfo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border: 6px solid rgb(0, 0, 0);
+    background:#6fa0d5b8;
+    gap: 100px;
+}
+
+#weatherInfoLeft{
+    display:flex;
+    flex-direction:column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#weatherInfoRight{
+    display:flex;
+    flex-direction:column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.weatherInfoDetails{
+    font-size:150%;
+}
+
+#pokemonInfoContainer{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid rgb(0, 0, 0);
+}
+
+#pokemonPictureBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-left: 3px solid rgb(0, 0, 0);
+}
+
+.pokemonInfoDetails {
+    margin: 0.5em;
+    font-size: 150%;
+}
+
+#pokemonInfoTitle {
+    font-weight: bold;
+    font-size: 250%;
+}
+
+#pokemonImage {
+    height: auto;
+    width: 50%;
+}
+
+#pokemonFactBtn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#locationSearchBtn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.locationSearchBar input[type="text"] {
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+/* NEW TEST ITEMS FOR FUNCTION */
+.popup {
+    display: none;
+    flex-direction: column; /* Adjust based on your layout preference */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: For background shading */
+    z-index: 9999;
+    overflow: auto; /* In case the popup content is too tall */
+}
+
+.popup-content {
+    background-color: rgb(203, 202, 202);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.popup-content-divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin: 10px 0;
+}
+
+.popup input[type="text"] {
+    margin: 10px 10px;
+    width: 30%; /* Make input fields take full width */
+    padding: 10px;
+}
+
+.popup-header-top {
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.popup-header-mini {
+    margin-top: 10px;
+}
+
+.popup-header-subtitle {
+    font-size: 150%;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#popup-header-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popup-top-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.popup-header-top-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 32px 64px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+.popup button.cancel {
+    background-color: #dc3545;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+#popup-button-right {
+    justify-content: right;
+    margin-right: 30px;
+}
+
+#popup-button-left {
+    justify-content: left;
+    margin-left: 30px;
+}
+
+#openPopupBtn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

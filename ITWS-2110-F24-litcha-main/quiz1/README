@@ -1,0 +1,21 @@
+Here is documentation for a totally free, no sign-up required, API: https://www.frankfurter.app/docs/
+
+You must use the /latest endpoint (https://api.frankfurter.app/latest). You must make an API call to retrieve the JSON data. Use PHP to take that JSON data and put it in your database. Then pull the JSON out of the database to display on your frontend.
+
+Take your openweathermap API and the other API you selected for Lab 3 and integrate all this information into one interesting (and hopefully coherent, though that is not a requirement) single-page web app. Anything that is acceptable to use on a lab is OK to use here. You may creatively reuse code you’ve already written…
+
+Be creative! In the grading rubric, half of the score is creativity. The other half is implementing the above correctly. I want to see a lot more than black text on a white background.
+
+Finally, write a README.md file explaining everything you did, documenting your creativity, and citing your sources.
+
+ALSO IN THE README PUT YOUR AZURE LINK
+
+
+
+--------
+Azure Link: https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/
+I copied my lab3 code and put into the quiz1 folder and began attmepting to create a display for the new data taken from the currency cinversion. Users will input this data into the manually input data section, which will be sent tot he database, perform the conversion, and then finally spit it back out in a new box that is under all the existing weather data on screen. 
+
+Sources:
+1. Lab3 code
+2. https://www.frankfurter.app/docs/

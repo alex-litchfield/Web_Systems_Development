@@ -1,0 +1,3355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2024-10-18-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2024-10-18-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2024-10-18-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2024-10-18-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Fri 18 Oct 2024, at 01:38:02</span>
+		</p>
+		<p>ZAP Version: 2.15.0</p>
+		<p>
+			ZAP is supported by the <a href="https://crashoverride.com/?zap=rep">Crash Override Open Source Fellowship</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(2)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://litcha.eastus.cloudapp.azure.com</span></li>
+						<li><span class="site">http://litcha.eastus.cloudapp.azure.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(45.5%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(54.5%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>11</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="2">Site</th>
+							<th scope="row">https://litcha.eastus.cloudapp.azure.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">http://litcha.eastus.cloudapp.azure.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(90.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Application Error Disclosure</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Big Redirect Detected (Potential Sensitive Information Leak)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>15</span><br> <span
+								class="additional-info-percentages">(136.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(109.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(63.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Modern Web Application</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(109.1%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>11</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://litcha.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (260 bytes)</summary>
+				
+				<pre><code>GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/ HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:47 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;eee-624b99ccde941&quot;
+Accept-Ranges: bytes
+Content-Length: 3822
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3822 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Live Weather Application&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navbar&quot;&gt;
+    &lt;h1 class=&quot;navbar-title&quot;&gt;Live Weather Application&lt;/h1&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;pokemon-fact-btn&quot; onclick=&quot;fetchPokemonData()&quot;&gt;Click for new Pokémon fact&lt;/button&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;edit-data-btn&quot;&gt;Click to manually edit data&lt;/button&gt;
+    &lt;form class=&quot;search-form&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city-input&quot; placeholder=&quot;City Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;state-input&quot; placeholder=&quot;State (Text, Optional)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;country-input&quot; placeholder=&quot;Country Code (Text)&quot;&gt;
+        &lt;button type=&quot;button&quot; id=&quot;search-btn&quot; class=&quot;blue-button&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;top-row&quot;&gt;
+      &lt;div class=&quot;box top-left&quot;&gt;
+        &lt;p class=&quot;location-name&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;coordinates&quot;&gt;
+          &lt;p&gt;Longitude: &lt;/p&gt;
+          &lt;p&gt;Latitude: &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-middle&quot;&gt;
+        &lt;h3&gt;Random Pokemon Fact!&lt;/h3&gt;
+        &lt;p class=&quot;pokemon-name&quot;&gt;Name: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-type&quot;&gt;Type(s): &lt;/p&gt;
+        &lt;p class=&quot;pokedex-number&quot;&gt;Pokedex Number: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-abilities&quot;&gt;Abilities: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-height&quot;&gt;Height: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-weight&quot;&gt;Weight: &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-right&quot;&gt;
+        &lt;img class=&quot;pokemon-image&quot; src=&quot;&quot; alt=&quot;Pokemon Image&quot;&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom-box&quot;&gt;
+        &lt;div class=&quot;left-column&quot;&gt;
+            &lt;div&gt;Weather Forecast: &lt;/div&gt;
+            &lt;div&gt;Air Temperature: &lt;/div&gt;
+            &lt;div&gt;Minimum Temperature: &lt;/div&gt;
+            &lt;div&gt;Maximum Temperature: &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right-column&quot;&gt;
+            &lt;div&gt;Feels Like Temperature: &lt;/div&gt;
+            &lt;div&gt;Timezone: &lt;/div&gt;
+            &lt;div&gt;Wind Speed: &lt;/div&gt;
+            &lt;div&gt;Humidity: &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+  &lt;div id=&quot;popup&quot; class=&quot;popup hidden&quot;&gt;
+    &lt;div class=&quot;popup-header&quot;&gt;
+      &lt;button class=&quot;submit-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;h2&gt;Edit Data Fields&lt;/h2&gt;
+      &lt;button class=&quot;cancel-btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Pokemon Data&lt;/h3&gt;
+    &lt;form class=&quot;pokemon-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Type (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Height (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Weight (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokedex Number (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Abilities (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Image (Link)&quot;&gt;
+    &lt;/form&gt;
+
+    &lt;h3&gt;Weather Data&lt;/h3&gt;
+    &lt;form class=&quot;weather-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Weather Forecast (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Air Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Min Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Max Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Feels Like Temp (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Timezone (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Wind Speed (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Humidity (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Latitude (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Longitude (Decimal)&quot;&gt;      
+        &lt;input type=&quot;text&quot; placeholder=&quot;City (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;State (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Country (Text)&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://litcha.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (260 bytes)</summary>
+				
+				<pre><code>GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/ HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:47 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;eee-624b99ccde941&quot;
+Accept-Ranges: bytes
+Content-Length: 3822
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3822 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Live Weather Application&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navbar&quot;&gt;
+    &lt;h1 class=&quot;navbar-title&quot;&gt;Live Weather Application&lt;/h1&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;pokemon-fact-btn&quot; onclick=&quot;fetchPokemonData()&quot;&gt;Click for new Pokémon fact&lt;/button&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;edit-data-btn&quot;&gt;Click to manually edit data&lt;/button&gt;
+    &lt;form class=&quot;search-form&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city-input&quot; placeholder=&quot;City Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;state-input&quot; placeholder=&quot;State (Text, Optional)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;country-input&quot; placeholder=&quot;Country Code (Text)&quot;&gt;
+        &lt;button type=&quot;button&quot; id=&quot;search-btn&quot; class=&quot;blue-button&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;top-row&quot;&gt;
+      &lt;div class=&quot;box top-left&quot;&gt;
+        &lt;p class=&quot;location-name&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;coordinates&quot;&gt;
+          &lt;p&gt;Longitude: &lt;/p&gt;
+          &lt;p&gt;Latitude: &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-middle&quot;&gt;
+        &lt;h3&gt;Random Pokemon Fact!&lt;/h3&gt;
+        &lt;p class=&quot;pokemon-name&quot;&gt;Name: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-type&quot;&gt;Type(s): &lt;/p&gt;
+        &lt;p class=&quot;pokedex-number&quot;&gt;Pokedex Number: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-abilities&quot;&gt;Abilities: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-height&quot;&gt;Height: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-weight&quot;&gt;Weight: &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-right&quot;&gt;
+        &lt;img class=&quot;pokemon-image&quot; src=&quot;&quot; alt=&quot;Pokemon Image&quot;&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom-box&quot;&gt;
+        &lt;div class=&quot;left-column&quot;&gt;
+            &lt;div&gt;Weather Forecast: &lt;/div&gt;
+            &lt;div&gt;Air Temperature: &lt;/div&gt;
+            &lt;div&gt;Minimum Temperature: &lt;/div&gt;
+            &lt;div&gt;Maximum Temperature: &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right-column&quot;&gt;
+            &lt;div&gt;Feels Like Temperature: &lt;/div&gt;
+            &lt;div&gt;Timezone: &lt;/div&gt;
+            &lt;div&gt;Wind Speed: &lt;/div&gt;
+            &lt;div&gt;Humidity: &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+  &lt;div id=&quot;popup&quot; class=&quot;popup hidden&quot;&gt;
+    &lt;div class=&quot;popup-header&quot;&gt;
+      &lt;button class=&quot;submit-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;h2&gt;Edit Data Fields&lt;/h2&gt;
+      &lt;button class=&quot;cancel-btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Pokemon Data&lt;/h3&gt;
+    &lt;form class=&quot;pokemon-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Type (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Height (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Weight (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokedex Number (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Abilities (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Image (Link)&quot;&gt;
+    &lt;/form&gt;
+
+    &lt;h3&gt;Weather Data&lt;/h3&gt;
+    &lt;form class=&quot;weather-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Weather Forecast (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Air Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Min Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Max Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Feels Like Temp (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Timezone (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Wind Speed (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Humidity (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Latitude (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Longitude (Decimal)&quot;&gt;      
+        &lt;input type=&quot;text&quot; placeholder=&quot;City (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;State (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Country (Text)&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://litcha.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/resources/styles.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/319.html">CWE-319</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (359 bytes)</summary>
+				
+				<pre><code>GET https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/resources/styles.css HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (252 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:48 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;f7b-624b99ccded29&quot;
+Accept-Ranges: bytes
+Content-Length: 3963
+Vary: Accept-Encoding
+Content-Type: text/css
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3963 bytes)</summary>
+				
+				<pre><code>/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(&quot;./cloud-img-ai.webp&quot;);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(204, 153, 255, 0.5); /* More transparent */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid black; /* Increased border size */
+}
+
+.navbar-title {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem; /* Keep &quot;Live Weather Application&quot; larger */
+}
+
+.blue-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Increased padding size */
+  font-size: 0.9rem; /* Smaller text */
+  cursor: pointer;
+  border-radius: 10px; /* Rounder corners */
+}
+
+.blue-button:hover {
+  background-color: darkblue;
+}
+
+/* Content Styling */
+.content {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0; /* No space between top row and bottom box */
+}
+
+/* Top Row Boxes */
+.top-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  margin-top: 20px; /* Added margin between navbar and top row */
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.5); /* More transparent */
+  border: 4px solid black; /* Increased border size */
+  border-radius: 15px; /* Rounder border radius */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 130%; /* 30% width increase */
+}
+
+/* Top Left Box Text Styling */
+.top-left-text {
+  font-size: 2.0rem; /* Increased text size significantly */
+  text-align: center;
+  line-height: 2rem; /* Spaced out text inside the box */
+}
+
+.top-left .coordinates p {
+  font-size: 1.5rem; /* Slightly increased size for coordinates */
+}
+
+.location-name {
+  font-size: 2.25rem; /* 1.5 times larger than 1.5rem coordinates size */
+  font-weight: bold; /* Boldface */
+}
+
+.top-middle {
+  text-align: center;
+}
+
+.top-middle h3 {
+  font-size: 1.5rem; /* Adjusted font size for the title */
+}
+
+.top-middle p {
+  font-size: 1.2rem; /* Adjusted font size for all paragraphs */
+}
+
+.top-right img {
+  width: 50%;
+  height: auto;
+}
+
+/* Bottom Box */
+.bottom-box {
+  background-color: rgba(255, 255, 255, 0.5); /* More transparent */
+  border: 4px solid black; /* Increased border size */
+  border-radius: 15px; /* Rounder border radius */
+  width: 56%; /* Reduced width by 30% */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; /* Increased padding */
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px; /* Added margin above bottom box */
+}
+
+/* Columns inside Bottom Box */
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased vertical spacing */
+  font-size: 1.7rem; /* Larger font size */
+}
+
+.left-column {
+  align-items: flex-start; /* Align items to the left */
+  width: 50%;
+}
+
+.right-column {
+  align-items: flex-end; /* Align items to the right */
+  width: 50%;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px; /* Rounder corners */
+}
+
+.cancel-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px; /* Rounder corners */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://litcha.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (260 bytes)</summary>
+				
+				<pre><code>GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/ HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:47 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;eee-624b99ccde941&quot;
+Accept-Ranges: bytes
+Content-Length: 3822
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3822 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Live Weather Application&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navbar&quot;&gt;
+    &lt;h1 class=&quot;navbar-title&quot;&gt;Live Weather Application&lt;/h1&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;pokemon-fact-btn&quot; onclick=&quot;fetchPokemonData()&quot;&gt;Click for new Pokémon fact&lt;/button&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;edit-data-btn&quot;&gt;Click to manually edit data&lt;/button&gt;
+    &lt;form class=&quot;search-form&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city-input&quot; placeholder=&quot;City Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;state-input&quot; placeholder=&quot;State (Text, Optional)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;country-input&quot; placeholder=&quot;Country Code (Text)&quot;&gt;
+        &lt;button type=&quot;button&quot; id=&quot;search-btn&quot; class=&quot;blue-button&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;top-row&quot;&gt;
+      &lt;div class=&quot;box top-left&quot;&gt;
+        &lt;p class=&quot;location-name&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;coordinates&quot;&gt;
+          &lt;p&gt;Longitude: &lt;/p&gt;
+          &lt;p&gt;Latitude: &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-middle&quot;&gt;
+        &lt;h3&gt;Random Pokemon Fact!&lt;/h3&gt;
+        &lt;p class=&quot;pokemon-name&quot;&gt;Name: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-type&quot;&gt;Type(s): &lt;/p&gt;
+        &lt;p class=&quot;pokedex-number&quot;&gt;Pokedex Number: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-abilities&quot;&gt;Abilities: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-height&quot;&gt;Height: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-weight&quot;&gt;Weight: &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-right&quot;&gt;
+        &lt;img class=&quot;pokemon-image&quot; src=&quot;&quot; alt=&quot;Pokemon Image&quot;&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom-box&quot;&gt;
+        &lt;div class=&quot;left-column&quot;&gt;
+            &lt;div&gt;Weather Forecast: &lt;/div&gt;
+            &lt;div&gt;Air Temperature: &lt;/div&gt;
+            &lt;div&gt;Minimum Temperature: &lt;/div&gt;
+            &lt;div&gt;Maximum Temperature: &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right-column&quot;&gt;
+            &lt;div&gt;Feels Like Temperature: &lt;/div&gt;
+            &lt;div&gt;Timezone: &lt;/div&gt;
+            &lt;div&gt;Wind Speed: &lt;/div&gt;
+            &lt;div&gt;Humidity: &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+  &lt;div id=&quot;popup&quot; class=&quot;popup hidden&quot;&gt;
+    &lt;div class=&quot;popup-header&quot;&gt;
+      &lt;button class=&quot;submit-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;h2&gt;Edit Data Fields&lt;/h2&gt;
+      &lt;button class=&quot;cancel-btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Pokemon Data&lt;/h3&gt;
+    &lt;form class=&quot;pokemon-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Type (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Height (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Weight (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokedex Number (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Abilities (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Image (Link)&quot;&gt;
+    &lt;/form&gt;
+
+    &lt;h3&gt;Weather Data&lt;/h3&gt;
+    &lt;form class=&quot;weather-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Weather Forecast (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Air Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Min Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Max Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Feels Like Temp (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Timezone (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Wind Speed (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Humidity (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Latitude (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Longitude (Decimal)&quot;&gt;      
+        &lt;input type=&quot;text&quot; placeholder=&quot;City (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;State (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Country (Text)&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58 (Ubuntu)</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://litcha.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Application Error Disclosure</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/resources/insert_pokemon.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces">WSTG-v42-ERRH-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling">WSTG-v42-ERRH-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (572 bytes)</summary>
+				
+				<pre><code>POST https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/resources/insert_pokemon.php HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/
+Content-Type: application/json
+Content-Length: 257
+Origin: https://litcha.eastus.cloudapp.azure.com
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (257 bytes)</summary>
+				
+				<pre><code>{&quot;name&quot;:&quot;HkSRzgXYHvanyWEVVRdwTugclhIhwuzW&quot;,&quot;type&quot;:&quot;tunqjXHcxfRlDGfPHSbilhHdkEaUNMhE&quot;,&quot;pokedexNumber&quot;:&quot;GpcmHCwQgjrSZGElLRbqwKMyyqtpFEVO&quot;,&quot;height&quot;:null,&quot;weight&quot;:null,&quot;abilities&quot;:&quot;QEjdGOONqQdOMqRMdMzCfWZeMdRTZYBS&quot;,&quot;imageUrl&quot;:&quot;YgjgqfFsBGbxRTlgyDEinWpXsNQaMXsi&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.0 500 Internal Server Error
+Date: Fri, 18 Oct 2024 05:35:05 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.0 500 Internal Server Error</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://litcha.eastus.cloudapp.azure.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Big Redirect Detected (Potential Sensitive Information Leak)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://litcha.eastus.cloudapp.azure.com/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/201.html">CWE-201</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Location header URI length: 52 [https://litcha.eastus.cloudapp.azure.com/sitemap.xml].</p>
+
+<p>Predicted response size: 352.</p>
+
+<p>Response Body Length: 358.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (245 bytes)</summary>
+				
+				<pre><code>GET http://litcha.eastus.cloudapp.azure.com/sitemap.xml HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (233 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 301 Moved Permanently
+Date: Fri, 18 Oct 2024 05:34:48 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Location: https://litcha.eastus.cloudapp.azure.com/sitemap.xml
+Content-Length: 358
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (358 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;301 Moved Permanently&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Moved Permanently&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;https://litcha.eastus.cloudapp.azure.com/sitemap.xml&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Ubuntu) Server at litcha.eastus.cloudapp.azure.com Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (260 bytes)</summary>
+				
+				<pre><code>GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/ HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:47 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;eee-624b99ccde941&quot;
+Accept-Ranges: bytes
+Content-Length: 3822
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3822 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Live Weather Application&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navbar&quot;&gt;
+    &lt;h1 class=&quot;navbar-title&quot;&gt;Live Weather Application&lt;/h1&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;pokemon-fact-btn&quot; onclick=&quot;fetchPokemonData()&quot;&gt;Click for new Pokémon fact&lt;/button&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;edit-data-btn&quot;&gt;Click to manually edit data&lt;/button&gt;
+    &lt;form class=&quot;search-form&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city-input&quot; placeholder=&quot;City Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;state-input&quot; placeholder=&quot;State (Text, Optional)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;country-input&quot; placeholder=&quot;Country Code (Text)&quot;&gt;
+        &lt;button type=&quot;button&quot; id=&quot;search-btn&quot; class=&quot;blue-button&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;top-row&quot;&gt;
+      &lt;div class=&quot;box top-left&quot;&gt;
+        &lt;p class=&quot;location-name&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;coordinates&quot;&gt;
+          &lt;p&gt;Longitude: &lt;/p&gt;
+          &lt;p&gt;Latitude: &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-middle&quot;&gt;
+        &lt;h3&gt;Random Pokemon Fact!&lt;/h3&gt;
+        &lt;p class=&quot;pokemon-name&quot;&gt;Name: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-type&quot;&gt;Type(s): &lt;/p&gt;
+        &lt;p class=&quot;pokedex-number&quot;&gt;Pokedex Number: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-abilities&quot;&gt;Abilities: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-height&quot;&gt;Height: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-weight&quot;&gt;Weight: &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-right&quot;&gt;
+        &lt;img class=&quot;pokemon-image&quot; src=&quot;&quot; alt=&quot;Pokemon Image&quot;&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom-box&quot;&gt;
+        &lt;div class=&quot;left-column&quot;&gt;
+            &lt;div&gt;Weather Forecast: &lt;/div&gt;
+            &lt;div&gt;Air Temperature: &lt;/div&gt;
+            &lt;div&gt;Minimum Temperature: &lt;/div&gt;
+            &lt;div&gt;Maximum Temperature: &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right-column&quot;&gt;
+            &lt;div&gt;Feels Like Temperature: &lt;/div&gt;
+            &lt;div&gt;Timezone: &lt;/div&gt;
+            &lt;div&gt;Wind Speed: &lt;/div&gt;
+            &lt;div&gt;Humidity: &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+  &lt;div id=&quot;popup&quot; class=&quot;popup hidden&quot;&gt;
+    &lt;div class=&quot;popup-header&quot;&gt;
+      &lt;button class=&quot;submit-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;h2&gt;Edit Data Fields&lt;/h2&gt;
+      &lt;button class=&quot;cancel-btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Pokemon Data&lt;/h3&gt;
+    &lt;form class=&quot;pokemon-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Type (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Height (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Weight (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokedex Number (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Abilities (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Image (Link)&quot;&gt;
+    &lt;/form&gt;
+
+    &lt;h3&gt;Weather Data&lt;/h3&gt;
+    &lt;form class=&quot;weather-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Weather Forecast (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Air Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Min Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Max Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Feels Like Temp (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Timezone (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Wind Speed (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Humidity (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Latitude (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Longitude (Decimal)&quot;&gt;      
+        &lt;input type=&quot;text&quot; placeholder=&quot;City (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;State (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Country (Text)&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://litcha.eastus.cloudapp.azure.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (260 bytes)</summary>
+				
+				<pre><code>GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/ HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:47 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;eee-624b99ccde941&quot;
+Accept-Ranges: bytes
+Content-Length: 3822
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3822 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Live Weather Application&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navbar&quot;&gt;
+    &lt;h1 class=&quot;navbar-title&quot;&gt;Live Weather Application&lt;/h1&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;pokemon-fact-btn&quot; onclick=&quot;fetchPokemonData()&quot;&gt;Click for new Pokémon fact&lt;/button&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;edit-data-btn&quot;&gt;Click to manually edit data&lt;/button&gt;
+    &lt;form class=&quot;search-form&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city-input&quot; placeholder=&quot;City Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;state-input&quot; placeholder=&quot;State (Text, Optional)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;country-input&quot; placeholder=&quot;Country Code (Text)&quot;&gt;
+        &lt;button type=&quot;button&quot; id=&quot;search-btn&quot; class=&quot;blue-button&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;top-row&quot;&gt;
+      &lt;div class=&quot;box top-left&quot;&gt;
+        &lt;p class=&quot;location-name&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;coordinates&quot;&gt;
+          &lt;p&gt;Longitude: &lt;/p&gt;
+          &lt;p&gt;Latitude: &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-middle&quot;&gt;
+        &lt;h3&gt;Random Pokemon Fact!&lt;/h3&gt;
+        &lt;p class=&quot;pokemon-name&quot;&gt;Name: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-type&quot;&gt;Type(s): &lt;/p&gt;
+        &lt;p class=&quot;pokedex-number&quot;&gt;Pokedex Number: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-abilities&quot;&gt;Abilities: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-height&quot;&gt;Height: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-weight&quot;&gt;Weight: &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-right&quot;&gt;
+        &lt;img class=&quot;pokemon-image&quot; src=&quot;&quot; alt=&quot;Pokemon Image&quot;&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom-box&quot;&gt;
+        &lt;div class=&quot;left-column&quot;&gt;
+            &lt;div&gt;Weather Forecast: &lt;/div&gt;
+            &lt;div&gt;Air Temperature: &lt;/div&gt;
+            &lt;div&gt;Minimum Temperature: &lt;/div&gt;
+            &lt;div&gt;Maximum Temperature: &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right-column&quot;&gt;
+            &lt;div&gt;Feels Like Temperature: &lt;/div&gt;
+            &lt;div&gt;Timezone: &lt;/div&gt;
+            &lt;div&gt;Wind Speed: &lt;/div&gt;
+            &lt;div&gt;Humidity: &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+  &lt;div id=&quot;popup&quot; class=&quot;popup hidden&quot;&gt;
+    &lt;div class=&quot;popup-header&quot;&gt;
+      &lt;button class=&quot;submit-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;h2&gt;Edit Data Fields&lt;/h2&gt;
+      &lt;button class=&quot;cancel-btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Pokemon Data&lt;/h3&gt;
+    &lt;form class=&quot;pokemon-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Type (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Height (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Weight (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokedex Number (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Abilities (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Image (Link)&quot;&gt;
+    &lt;/form&gt;
+
+    &lt;h3&gt;Weather Data&lt;/h3&gt;
+    &lt;form class=&quot;weather-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Weather Forecast (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Air Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Min Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Max Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Feels Like Temp (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Timezone (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Wind Speed (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Humidity (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Latitude (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Longitude (Decimal)&quot;&gt;      
+        &lt;input type=&quot;text&quot; placeholder=&quot;City (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;State (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Country (Text)&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (229 bytes)</summary>
+				
+				<pre><code>GET http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4 HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:36:59 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;eee-624b99ccde941&quot;
+Accept-Ranges: bytes
+Content-Length: 3822
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3822 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Live Weather Application&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navbar&quot;&gt;
+    &lt;h1 class=&quot;navbar-title&quot;&gt;Live Weather Application&lt;/h1&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;pokemon-fact-btn&quot; onclick=&quot;fetchPokemonData()&quot;&gt;Click for new Pokémon fact&lt;/button&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;edit-data-btn&quot;&gt;Click to manually edit data&lt;/button&gt;
+    &lt;form class=&quot;search-form&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city-input&quot; placeholder=&quot;City Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;state-input&quot; placeholder=&quot;State (Text, Optional)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;country-input&quot; placeholder=&quot;Country Code (Text)&quot;&gt;
+        &lt;button type=&quot;button&quot; id=&quot;search-btn&quot; class=&quot;blue-button&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;top-row&quot;&gt;
+      &lt;div class=&quot;box top-left&quot;&gt;
+        &lt;p class=&quot;location-name&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;coordinates&quot;&gt;
+          &lt;p&gt;Longitude: &lt;/p&gt;
+          &lt;p&gt;Latitude: &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-middle&quot;&gt;
+        &lt;h3&gt;Random Pokemon Fact!&lt;/h3&gt;
+        &lt;p class=&quot;pokemon-name&quot;&gt;Name: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-type&quot;&gt;Type(s): &lt;/p&gt;
+        &lt;p class=&quot;pokedex-number&quot;&gt;Pokedex Number: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-abilities&quot;&gt;Abilities: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-height&quot;&gt;Height: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-weight&quot;&gt;Weight: &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-right&quot;&gt;
+        &lt;img class=&quot;pokemon-image&quot; src=&quot;&quot; alt=&quot;Pokemon Image&quot;&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom-box&quot;&gt;
+        &lt;div class=&quot;left-column&quot;&gt;
+            &lt;div&gt;Weather Forecast: &lt;/div&gt;
+            &lt;div&gt;Air Temperature: &lt;/div&gt;
+            &lt;div&gt;Minimum Temperature: &lt;/div&gt;
+            &lt;div&gt;Maximum Temperature: &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right-column&quot;&gt;
+            &lt;div&gt;Feels Like Temperature: &lt;/div&gt;
+            &lt;div&gt;Timezone: &lt;/div&gt;
+            &lt;div&gt;Wind Speed: &lt;/div&gt;
+            &lt;div&gt;Humidity: &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+  &lt;div id=&quot;popup&quot; class=&quot;popup hidden&quot;&gt;
+    &lt;div class=&quot;popup-header&quot;&gt;
+      &lt;button class=&quot;submit-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;h2&gt;Edit Data Fields&lt;/h2&gt;
+      &lt;button class=&quot;cancel-btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Pokemon Data&lt;/h3&gt;
+    &lt;form class=&quot;pokemon-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Type (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Height (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Weight (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokedex Number (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Abilities (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Image (Link)&quot;&gt;
+    &lt;/form&gt;
+
+    &lt;h3&gt;Weather Data&lt;/h3&gt;
+    &lt;form class=&quot;weather-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Weather Forecast (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Air Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Min Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Max Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Feels Like Temp (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Timezone (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Wind Speed (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Humidity (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Latitude (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Longitude (Decimal)&quot;&gt;      
+        &lt;input type=&quot;text&quot; placeholder=&quot;City (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;State (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Country (Text)&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://litcha.eastus.cloudapp.azure.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/resources/script.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bFROM\b and was detected 8 times, the first in the element starting with: &quot;    // Retrieve Pokémon data from the database&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (358 bytes)</summary>
+				
+				<pre><code>GET https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/resources/script.js HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (261 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:48 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 03:07:06 GMT
+ETag: &quot;36c8-624b7991b1133&quot;
+Accept-Ranges: bytes
+Content-Length: 14024
+Vary: Accept-Encoding
+Content-Type: text/javascript
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (14024 bytes)</summary>
+				
+				<pre><code>const editDataBtn = document.getElementById(&#39;edit-data-btn&#39;);
+const popup = document.getElementById(&#39;popup&#39;);
+const submitBtn = document.querySelector(&#39;.submit-btn&#39;);
+const cancelBtn = document.querySelector(&#39;.cancel-btn&#39;);
+const openWeatherMapAPIKey = &#39;755b0ebbfecf791d3a8f83caad2110fc&#39;;
+
+let currentPokemonData = {};
+let currentWeatherData = {};
+
+// Open popup
+editDataBtn.addEventListener(&#39;click&#39;, () =&gt; {
+  popup.classList.remove(&#39;hidden&#39;);
+});
+
+// Close popup
+submitBtn.addEventListener(&#39;click&#39;, async () =&gt; {
+  await updateData();
+  popup.classList.add(&#39;hidden&#39;);
+});
+
+cancelBtn.addEventListener(&#39;click&#39;, () =&gt; {
+  popup.classList.add(&#39;hidden&#39;);
+});
+
+document.addEventListener(&quot;DOMContentLoaded&quot;, async () =&gt; {
+  // Fetch weather data using geolocation
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(position =&gt; {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      fetchWeatherData(latitude, longitude);
+    }, error =&gt; console.error(&quot;Geolocation error:&quot;, error));
+  } else {
+    console.error(&quot;Geolocation is not supported by this browser.&quot;);
+  }
+
+  // Fetch initial Pokémon data
+  await fetchPokemonData();
+});
+
+// Function to fetch Pokémon data and update the UI
+async function fetchPokemonData() {
+  const randomDexNumber = Math.floor(Math.random() * 898) + 1; // Random Pokémon between 1 and 898
+
+  try {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomDexNumber}/`);
+    const data = await response.json();
+
+    const pokemonName = data.name;
+    const pokemonType = data.types.map(type =&gt; type.type.name).join(&quot;, &quot;);
+    const pokedexNumber = data.id;
+    const pokemonAbilities = data.abilities.map(ability =&gt; ability.ability.name).join(&quot;, &quot;);
+    const pokemonHeight = data.height / 10; // cm
+    const pokemonWeight = data.weight / 10; // kg
+    const pokemonImageUrl = data.sprites.other[&#39;official-artwork&#39;].front_default;
+
+    currentPokemonData = {
+      name: pokemonName,
+      type: pokemonType,
+      pokedexNumber: pokedexNumber,
+      height: pokemonHeight,
+      weight: pokemonWeight,
+      abilities: pokemonAbilities,
+      imageUrl: pokemonImageUrl
+    };
+
+    // Insert Pokémon data into the database using PHP
+    await fetch(&#39;resources/insert_pokemon.php&#39;, {
+      method: &#39;POST&#39;,
+      headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+      body: JSON.stringify(currentPokemonData)
+    });
+
+    // Retrieve Pokémon data from the database
+    const dbResponse = await fetch(&#39;resources/get_pokemon.php&#39;);
+    const pokemonFromDB = await dbResponse.json();
+
+    // Update the UI with Pokémon data from the database
+    document.querySelector(&#39;.pokemon-name&#39;).textContent = `Name: ${pokemonFromDB.pokemon_name}`;
+    document.querySelector(&#39;.pokemon-type&#39;).textContent = `Type(s): ${pokemonFromDB.pokemon_type}`;
+    document.querySelector(&#39;.pokedex-number&#39;).textContent = `Pokedex Number: ${pokemonFromDB.pokedex_number}`;
+    document.querySelector(&#39;.pokemon-abilities&#39;).textContent = `Abilities: ${pokemonFromDB.pokemon_abilities}`;
+    document.querySelector(&#39;.pokemon-height&#39;).textContent = `Height: ${pokemonFromDB.pokemon_height} cm`;
+    document.querySelector(&#39;.pokemon-weight&#39;).textContent = `Weight: ${pokemonFromDB.pokemon_weight} kg`;
+    document.querySelector(&#39;.pokemon-image&#39;).src = pokemonFromDB.pokemon_image_url;
+
+  } catch (error) {
+    console.error(&quot;Error fetching or displaying Pokémon data:&quot;, error);
+  }
+}
+
+// Function to fetch weather data and update the UI
+async function fetchWeatherData(latitude, longitude) {
+  try {
+    const weatherResponse = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&amp;lon=${longitude}&amp;appid=${openWeatherMapAPIKey}&amp;units=imperial`
+    );
+    const weatherData = await weatherResponse.json();
+
+    const weatherForecast = weatherData.weather[0].description;
+    const cityName = weatherData.name;
+    const countryName = weatherData.sys.country;
+    const timezoneOffset = weatherData.timezone / 3600;
+    const humidity = weatherData.main.humidity;
+    const windSpeed = weatherData.wind.speed;
+    const airTemperature = weatherData.main.temp;
+    const minTemperature = weatherData.main.temp_min;
+    const maxTemperature = weatherData.main.temp_max;
+    const feelsLikeTemperature = weatherData.main.feels_like;
+
+    currentWeatherData = {
+      forecast: weatherForecast,
+      city: cityName,
+      state: &quot;&quot;,
+      country: countryName,
+      timezone: timezoneOffset,
+      humidity: humidity,
+      windSpeed: windSpeed,
+      airTemperature: airTemperature,
+      minTemperature: minTemperature,
+      maxTemperature: maxTemperature,
+      feelsLikeTemperature: feelsLikeTemperature,
+      latitude: latitude,
+      longitude: longitude
+    };
+
+    // Insert weather data into the database using PHP
+    await fetch(&#39;resources/insert_weather.php&#39;, {
+      method: &#39;POST&#39;,
+      headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+      body: JSON.stringify(currentWeatherData)
+    });
+
+    // Retrieve weather data from the database
+    const dbResponse = await fetch(&#39;resources/get_weather.php&#39;);
+    const weatherFromDB = await dbResponse.json();
+
+    // Update the UI with weather data
+    document.querySelector(&#39;.left-column&#39;).innerHTML = `
+      &lt;div&gt;Weather Forecast: ${weatherFromDB.weather_forecast}&lt;/div&gt;
+      &lt;div&gt;Air Temperature: ${weatherFromDB.air_temperature} F&lt;/div&gt;
+      &lt;div&gt;Minimum Temperature: ${weatherFromDB.min_temperature} F&lt;/div&gt;
+      &lt;div&gt;Maximum Temperature: ${weatherFromDB.max_temperature} F&lt;/div&gt;
+    `;
+    document.querySelector(&#39;.right-column&#39;).innerHTML = `
+      &lt;div&gt;Feels Like Temperature: ${weatherFromDB.feels_like_temperature} F&lt;/div&gt;
+      &lt;div&gt;Timezone: ${weatherFromDB.timezone_offset}:00 UTC&lt;/div&gt;
+      &lt;div&gt;Wind Speed: ${weatherFromDB.wind_speed} Mph&lt;/div&gt;
+      &lt;div&gt;Humidity: ${weatherFromDB.humidity}%&lt;/div&gt;
+    `;
+    document.querySelector(&#39;.coordinates&#39;).innerHTML = `
+      &lt;p&gt;Longitude: ${weatherFromDB.longitude}&lt;/p&gt;
+      &lt;p&gt;Latitude: ${weatherFromDB.latitude}&lt;/p&gt;
+    `;
+    document.querySelector(&#39;.location-name&#39;).textContent = `${weatherFromDB.city_name}, ${weatherFromDB.country_name}`;
+
+  } catch (error) {
+    console.error(&quot;Error fetching or displaying weather data:&quot;, error);
+  }
+}
+
+// Function to update data in the database
+async function updateData() {
+  const pokemonForm = document.querySelector(&#39;.pokemon-form&#39;);
+  const weatherForm = document.querySelector(&#39;.weather-form&#39;);
+
+  // Gather Pokémon data
+  const updatedPokemonData = {
+    name: pokemonForm[0].value || currentPokemonData.name,
+    type: pokemonForm[1].value || currentPokemonData.type,
+    pokedexNumber: pokemonForm[4].value || currentPokemonData.pokedexNumber,
+    height: pokemonForm[2].value ? parseFloat(pokemonForm[2].value) : currentPokemonData.height,
+    weight: pokemonForm[3].value ? parseFloat(pokemonForm[3].value) : currentPokemonData.weight,
+    abilities: pokemonForm[5].value || currentPokemonData.abilities,
+    imageUrl: pokemonForm[6].value || currentPokemonData.imageUrl
+  };
+
+  // Gather Weather data
+  const updatedWeatherData = {
+    forecast: weatherForm[0].value || currentWeatherData.forecast,
+    city: weatherForm[10].value || currentWeatherData.city,   // Changed index from 9 to 10
+    state: weatherForm[11].value || currentWeatherData.state,  // Changed index from 8 to 11
+    country: weatherForm[12].value || currentWeatherData.country, // Changed index from 10 to 12
+    timezone: weatherForm[5].value ? parseInt(weatherForm[5].value) : currentWeatherData.timezone,
+    humidity: weatherForm[7].value ? parseInt(weatherForm[7].value) : currentWeatherData.humidity,
+    windSpeed: weatherForm[6].value ? parseFloat(weatherForm[6].value) : currentWeatherData.windSpeed,
+    airTemperature: weatherForm[1].value ? parseFloat(weatherForm[1].value) : currentWeatherData.airTemperature,
+    minTemperature: weatherForm[2].value ? parseFloat(weatherForm[2].value) : currentWeatherData.minTemperature,
+    maxTemperature: weatherForm[3].value ? parseFloat(weatherForm[3].value) : currentWeatherData.maxTemperature,
+    feelsLikeTemperature: weatherForm[4].value ? parseFloat(weatherForm[4].value) : currentWeatherData.feelsLikeTemperature,
+    latitude: weatherForm[8].value ? parseFloat(weatherForm[8].value) : currentWeatherData.latitude,
+    longitude: weatherForm[9].value ? parseFloat(weatherForm[9].value) : currentWeatherData.longitude
+  };
+
+  // Send updated Pokémon data to the database
+  await fetch(&#39;resources/insert_pokemon.php&#39;, {
+    method: &#39;POST&#39;,
+    headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+    body: JSON.stringify(updatedPokemonData)
+  });
+
+  // Send updated weather data to the database
+  await fetch(&#39;resources/insert_weather.php&#39;, {
+    method: &#39;POST&#39;,
+    headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+    body: JSON.stringify(updatedWeatherData)
+  });
+
+  // Refresh the displayed data after update
+  await fetch(&#39;resources/get_pokemon.php&#39;)
+    .then(response =&gt; response.json())
+    .then(pokemonFromDB =&gt; {
+      document.querySelector(&#39;.pokemon-name&#39;).textContent = `Name: ${pokemonFromDB.pokemon_name}`;
+      document.querySelector(&#39;.pokemon-type&#39;).textContent = `Type(s): ${pokemonFromDB.pokemon_type}`;
+      document.querySelector(&#39;.pokedex-number&#39;).textContent = `Pokedex Number: ${pokemonFromDB.pokedex_number}`;
+      document.querySelector(&#39;.pokemon-abilities&#39;).textContent = `Abilities: ${pokemonFromDB.pokemon_abilities}`;
+      document.querySelector(&#39;.pokemon-height&#39;).textContent = `Height: ${pokemonFromDB.pokemon_height} cm`;
+      document.querySelector(&#39;.pokemon-weight&#39;).textContent = `Weight: ${pokemonFromDB.pokemon_weight} kg`;
+      document.querySelector(&#39;.pokemon-image&#39;).src = pokemonFromDB.pokemon_image_url;
+    });
+
+  await fetch(&#39;resources/get_weather.php&#39;)
+    .then(response =&gt; response.json())
+    .then(weatherFromDB =&gt; {
+      document.querySelector(&#39;.left-column&#39;).innerHTML = `
+        &lt;div&gt;Weather Forecast: ${weatherFromDB.weather_forecast}&lt;/div&gt;
+        &lt;div&gt;Air Temperature: ${weatherFromDB.air_temperature} F&lt;/div&gt;
+        &lt;div&gt;Minimum Temperature: ${weatherFromDB.min_temperature} F&lt;/div&gt;
+        &lt;div&gt;Maximum Temperature: ${weatherFromDB.max_temperature} F&lt;/div&gt;
+      `;
+      document.querySelector(&#39;.right-column&#39;).innerHTML = `
+        &lt;div&gt;Feels Like Temperature: ${weatherFromDB.feels_like_temperature} F&lt;/div&gt;
+        &lt;div&gt;Timezone: ${weatherFromDB.timezone_offset}:00 UTC&lt;/div&gt;
+        &lt;div&gt;Wind Speed: ${weatherFromDB.wind_speed} Mph&lt;/div&gt;
+        &lt;div&gt;Humidity: ${weatherFromDB.humidity}%&lt;/div&gt;
+      `;
+      document.querySelector(&#39;.coordinates&#39;).innerHTML = `
+        &lt;p&gt;Longitude: ${weatherFromDB.longitude}&lt;/p&gt;
+        &lt;p&gt;Latitude: ${weatherFromDB.latitude}&lt;/p&gt;
+      `;
+      document.querySelector(&#39;.location-name&#39;).textContent = `${weatherFromDB.city_name}, ${weatherFromDB.country_name}`;
+    });
+}
+
+document.getElementById(&#39;search-btn&#39;).addEventListener(&#39;click&#39;, searchWeatherByLocation);
+
+async function searchWeatherByLocation() {
+  const city = document.getElementById(&#39;city-input&#39;).value.trim();
+  const state = document.getElementById(&#39;state-input&#39;).value.trim();
+  const country = document.getElementById(&#39;country-input&#39;).value.trim();
+
+  if (!city) {
+    alert(&#39;Please enter a city name.&#39;);
+    return;
+  }
+
+  let locationQuery = city;
+  if (state) locationQuery += `,${state}`;
+  if (country) locationQuery += `,${country}`;
+
+  try {
+    // Fetch weather data from OpenWeatherMap API
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${locationQuery}&amp;appid=${openWeatherMapAPIKey}&amp;units=imperial`
+    );
+    if (!response.ok) {
+      throw new Error(&#39;Weather data not found. Please check your inputs.&#39;);
+    }
+
+    const weatherData = await response.json();
+
+    // Prepare data for insertion into the database
+    const weatherToInsert = {
+      forecast: weatherData.weather[0].description,
+      city: weatherData.name,
+      state: state || &quot;&quot;,
+      country: weatherData.sys.country,
+      timezone: weatherData.timezone / 3600,
+      humidity: weatherData.main.humidity,
+      windSpeed: weatherData.wind.speed,
+      airTemperature: weatherData.main.temp,
+      minTemperature: weatherData.main.temp_min,
+      maxTemperature: weatherData.main.temp_max,
+      feelsLikeTemperature: weatherData.main.feels_like,
+      latitude: weatherData.coord.lat,
+      longitude: weatherData.coord.lon
+    };
+
+    // Send the weather data to the database
+    await fetch(&#39;resources/insert_weather.php&#39;, {
+      method: &#39;POST&#39;,
+      headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+      body: JSON.stringify(weatherToInsert)
+    });
+
+    // Retrieve the latest weather data from the database
+    const dbResponse = await fetch(&#39;resources/get_weather.php&#39;);
+    const weatherFromDB = await dbResponse.json();
+
+    // Display the fetched weather data
+    displayWeatherData(weatherFromDB);
+
+  } catch (error) {
+    console.error(&#39;Error fetching or storing weather data:&#39;, error);
+  }
+}
+
+function displayWeatherData(weatherFromDB) {
+  document.querySelector(&#39;.location-name&#39;).textContent = 
+    `${weatherFromDB.city_name}, ${weatherFromDB.country_name}`;
+  
+  document.querySelector(&#39;.left-column&#39;).innerHTML = `
+    &lt;div&gt;Weather Forecast: ${weatherFromDB.weather_forecast}&lt;/div&gt;
+    &lt;div&gt;Air Temperature: ${weatherFromDB.air_temperature} F&lt;/div&gt;
+    &lt;div&gt;Min Temperature: ${weatherFromDB.min_temperature} F&lt;/div&gt;
+    &lt;div&gt;Max Temperature: ${weatherFromDB.max_temperature} F&lt;/div&gt;
+  `;
+
+  document.querySelector(&#39;.right-column&#39;).innerHTML = `
+    &lt;div&gt;Feels Like Temperature: ${weatherFromDB.feels_like_temperature} F&lt;/div&gt;
+    &lt;div&gt;Timezone: ${weatherFromDB.timezone_offset}:00 UTC&lt;/div&gt;
+    &lt;div&gt;Wind Speed: ${weatherFromDB.wind_speed} Mph&lt;/div&gt;
+    &lt;div&gt;Humidity: ${weatherFromDB.humidity}%&lt;/div&gt;
+  `;
+
+  document.querySelector(&#39;.coordinates&#39;).innerHTML = `
+    &lt;p&gt;Latitude: ${weatherFromDB.latitude}&lt;/p&gt;
+    &lt;p&gt;Longitude: ${weatherFromDB.longitude}&lt;/p&gt;
+  `;
+}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>from</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/525.html">CWE-525</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (338 bytes)</summary>
+				
+				<pre><code>GET https://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/ HTTP/1.1
+host: litcha.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: http://litcha.eastus.cloudapp.azure.com/ITWS-2110-F24-litcha/lab4/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 18 Oct 2024 05:34:48 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 18 Oct 2024 05:31:18 GMT
+ETag: &quot;eee-624b99ccde941&quot;
+Accept-Ranges: bytes
+Content-Length: 3822
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3822 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Live Weather Application&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navbar&quot;&gt;
+    &lt;h1 class=&quot;navbar-title&quot;&gt;Live Weather Application&lt;/h1&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;pokemon-fact-btn&quot; onclick=&quot;fetchPokemonData()&quot;&gt;Click for new Pokémon fact&lt;/button&gt;
+    &lt;button class=&quot;blue-button&quot; id=&quot;edit-data-btn&quot;&gt;Click to manually edit data&lt;/button&gt;
+    &lt;form class=&quot;search-form&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city-input&quot; placeholder=&quot;City Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;state-input&quot; placeholder=&quot;State (Text, Optional)&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;country-input&quot; placeholder=&quot;Country Code (Text)&quot;&gt;
+        &lt;button type=&quot;button&quot; id=&quot;search-btn&quot; class=&quot;blue-button&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;top-row&quot;&gt;
+      &lt;div class=&quot;box top-left&quot;&gt;
+        &lt;p class=&quot;location-name&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;coordinates&quot;&gt;
+          &lt;p&gt;Longitude: &lt;/p&gt;
+          &lt;p&gt;Latitude: &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-middle&quot;&gt;
+        &lt;h3&gt;Random Pokemon Fact!&lt;/h3&gt;
+        &lt;p class=&quot;pokemon-name&quot;&gt;Name: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-type&quot;&gt;Type(s): &lt;/p&gt;
+        &lt;p class=&quot;pokedex-number&quot;&gt;Pokedex Number: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-abilities&quot;&gt;Abilities: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-height&quot;&gt;Height: &lt;/p&gt;
+        &lt;p class=&quot;pokemon-weight&quot;&gt;Weight: &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box top-right&quot;&gt;
+        &lt;img class=&quot;pokemon-image&quot; src=&quot;&quot; alt=&quot;Pokemon Image&quot;&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom-box&quot;&gt;
+        &lt;div class=&quot;left-column&quot;&gt;
+            &lt;div&gt;Weather Forecast: &lt;/div&gt;
+            &lt;div&gt;Air Temperature: &lt;/div&gt;
+            &lt;div&gt;Minimum Temperature: &lt;/div&gt;
+            &lt;div&gt;Maximum Temperature: &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right-column&quot;&gt;
+            &lt;div&gt;Feels Like Temperature: &lt;/div&gt;
+            &lt;div&gt;Timezone: &lt;/div&gt;
+            &lt;div&gt;Wind Speed: &lt;/div&gt;
+            &lt;div&gt;Humidity: &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+
+  &lt;div id=&quot;popup&quot; class=&quot;popup hidden&quot;&gt;
+    &lt;div class=&quot;popup-header&quot;&gt;
+      &lt;button class=&quot;submit-btn&quot;&gt;Submit&lt;/button&gt;
+      &lt;h2&gt;Edit Data Fields&lt;/h2&gt;
+      &lt;button class=&quot;cancel-btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Pokemon Data&lt;/h3&gt;
+    &lt;form class=&quot;pokemon-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Name (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Type (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Height (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Weight (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokedex Number (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Abilities (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Pokemon Image (Link)&quot;&gt;
+    &lt;/form&gt;
+
+    &lt;h3&gt;Weather Data&lt;/h3&gt;
+    &lt;form class=&quot;weather-form&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Weather Forecast (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Air Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Min Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Max Temperature (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Feels Like Temp (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Timezone (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Wind Speed (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Humidity (Number)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Latitude (Decimal)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Longitude (Decimal)&quot;&gt;      
+        &lt;input type=&quot;text&quot; placeholder=&quot;City (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;State (Text)&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Country (Text)&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>cache-control</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Application Error Disclosure</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90022/">Application Error Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Big Redirect Detected (Potential Sensitive Information Leak)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10044/">Big Redirect Detected (Potential Sensitive Information Leak)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

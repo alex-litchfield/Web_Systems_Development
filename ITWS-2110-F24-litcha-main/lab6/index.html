@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+    font-src 'self' https://cdnjs.cloudflare.com;
+    img-src 'self' https://pokeapi.co https://raw.githubusercontent.com;
+    connect-src 'self' https://api.openweathermap.org https://pokeapi.co;">
+    <title>Lab 6: Live Weather App with Morville's Honeycomb</title>
+    <link rel="stylesheet" href="./resources/lab3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="./resources/lab3.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navBarFooterDefaults" id="navBar">
+        <p id = "titleName">Live Weather Application</p>
+        <button type="button" id="pokemonFactBtn" onclick="fetchPokeInfo()" aria-label="Click for new pokemon fact">Click for New Pokemon Fact</button>
+        <button type="button" id="openPopupBtn" onclick="openPopup(popupForm)" aria-label="Click to manually edit data">Click to Manually Edit Data</button>
+        <div class= "locationSearchBar" id="locationSearchBarItems">
+            <input type="text" id="cityInput" placeholder="City" required aria-label="Enter city name">
+            <input type="text" id="stateInput" placeholder="State" required aria-label="Enter state abbreviation">
+            <input type="text" id="countryInput" placeholder="Country Abbreviation" required aria-label="Enter country abbreviation">
+            <button type="locationSearch" id="locationSearchBtn" onclick="searchLocation()" aria-label="Click to search for a location">Search</button>
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div id="pageContent">
+        <div id="upperBox">
+            <!-- Location Data -->
+            <div id="upperBoxInfoContainer" class="infoDisplayBox">
+                <span class="open-tooltip transitionableItem" onclick="openPopup(locationPopup)" aria-label="Location Data Tooltip Button"><i class="fa-regular fa-circle-question"></i></span>
+                <p class="locationInfoDetails infoTitle" id="cityName"></p>
+                <p class="locationInfoDetails" id="cityLongitude"></p>
+                <p class="locationInfoDetails" id="cityLatitude"></p>
+            </div>
+            <!-- General Pokemon Data -->
+            <div id="pokemonBox" class="infoDisplayBox">
+                <div id="pokemonInfoContainer">
+                    <span class="open-tooltip transitionableItem" onclick="openPopup(pokemonDataPopup)" aria-label="General Pokemon Data Tooltip Button"><i class="fa-regular fa-circle-question"></i></span>
+                    <p class="pokemonInfoDetails infoTitle">Random Pokemon Fact</p>
+                    <p class="pokemonInfoDetails" id="pokemonName"></p>
+                    <p class="pokemonInfoDetails" id="pokemonType"></p>
+                    <p class="pokemonInfoDetails" id="pokemonDexNumber"></p>
+                    <p class="pokemonInfoDetails" id="pokemonHeight"></p>
+                    <p class="pokemonInfoDetails" id="pokemonWeight"></p>
+                    <p class="pokemonInfoDetails" id="pokemonAbilities"></p>
+                </div>
+                <!-- Pokemon Image -->
+                <div id="pokemonPictureBox">
+                    <span class="open-tooltip transitionableItem" onclick="openPopup(pokemonImagePopup)" aria-label="Pokemon Image Tooltip Button"><i class="fa-regular fa-circle-question"></i></span>
+                    <img id="pokemonImage" src="./resources/loading-gif.gif" alt="Pokemon Image">
+                </div>
+            </div>
+        </div>
+        <!-- General Weather Data -->
+        <div id="weatherInfo" class="infoDisplayBox">
+            <span class="open-tooltip transitionableItem" onclick="openPopup(weatherDataPopup)" aria-label="General Weather Data Tooltip Button"><i class="fa-regular fa-circle-question"></i></span>
+            <p class="pokemonInfoDetails infoTitle">Current Weather Information</p>
+            <div class="innerWeatherContainer">
+                <div id="weatherInfoLeft">
+                    <p class="weatherInfoDetails" id="weatherForecast"></p>
+                    <p class="weatherInfoDetails" id="airTemp"></p>
+                    <p class="weatherInfoDetails" id="minTemp"></p>
+                    <p class="weatherInfoDetails" id="maxTemp"></p>
+                </div>
+                <div id="weatherInfoRight">
+                    <p class="weatherInfoDetails" id="feelsLikeTemp"></p>
+                    <p class="weatherInfoDetails" id="timezone"></p>
+                    <p class="weatherInfoDetails" id="windSpeed"></p>
+                    <p class="weatherInfoDetails" id="humidity"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Function Popup Menu -->
+    <div class="popup" id="popupForm">
+        <div class="popup-content">
+            <div id="popup-top-container">
+                <div class="popup-header-top-divider" id="popup-button-left">
+                    <button class="submit" id="submitBtn" onclick="submitPopupMenuInfo()" aria-label="Click to submit new data">Submit</button>
+                </div>
+                <div class="popup-header-top-divider" id="popup-header-text-container">
+                    <div class="popup-header-top">Edit Data Fields</div>
+                    <div class="popup-header-mini">Blank fields leave original data unchanged</div>
+                    <div class="popup-header-mini">"City", "State", and "Country"</div>
+                    <div class="popup-header-mini">Fields will change as one</div>
+                </div>
+                <div class="popup-header-top-divider" id="popup-button-right">
+                    <button class="cancel" id="cancelBtn" onclick="closePopup(popupForm)" aria-label="Click to cancel data submission">Cancel</button>
+                </div>
+            </div>
+            <div class="popup-header-subtitle">Pokemon Data</div>
+            <!-- Inputs for Pokemon Info (Top) -->
+            <div class="popup-content-divider" id="pokemonInfoInputsGroup1">
+                <input type="text" id="pokemonNameInput" placeholder="Pokemon Name (Text)" aria-label="Enter pokemon Name (must be a text input)">
+                <input type="text" id="pokemonTypeInput" placeholder="Pokemon Type (Text)" aria-label="Enter pokemon type(s) (must be a text input)">
+                <input type="text" id="pokemonHeightInput" placeholder="Pokemon Height (Number)" aria-label="Enter pokemon height (must be a number input)">
+                <input type="text" id="pokemonWeightInput" placeholder="Pokemon Weight (Number)" aria-label="Enter pokemon weight (must be a number input)">
+            </div>
+            <!-- Inputs for Pokemon Info (Bottom) -->
+            <div class="popup-content-divider" id="pokemonInfoInputsGroup2">
+                <input type="text" id="pokemonDexNumberInput" placeholder="Pokedex Number (Number)" aria-label="Enter pokedex number (must be a number input)">
+                <input type="text" id="pokemonAbilitiesInput" placeholder="Pokemon Abilities (Text)" aria-label="Enter pokemon abilities (must be a text input)">
+                <input type="text" id="pokemonImageInput" placeholder="Pokemon Image (Link)" aria-label="Enter a pokemon Image (must be a link input)">
+            </div>
+            <!-- Inputs for Weather Info (Top) -->
+            <div class="popup-header-subtitle">Weather Data</div>
+            <div class="popup-content-divider" id="WeatherInfoInputsGroup1">
+                <input type="text" id="weatherForecastInput" placeholder="Weather Forecast (Text)" aria-label="Enter weather forecast (must be a text input)">
+                <input type="text" id="airTempInput" placeholder="Air Temperature (Number)" aria-label="Enter air temperature (must be a number input)">
+                <input type="text" id="minTempInput" placeholder="Min Temperature (Number)" aria-label="Enter minimum temperature (must be a number input)">
+                <input type="text" id="maxTempInput" placeholder="Max Temperature (Number)" aria-label="Enter maximum temperature (must be a number input)">
+            </div>
+            <!-- Inputs for Weather Info (Middle) -->
+            <div class="popup-content-divider" id="WeatherInfoInputsGroup2">
+                <input type="text" id="feelsLikeTempInput" placeholder="Feels Like Temp (Number)" aria-label="Enter feels like temperature (must be a number input)">
+                <input type="text" id="timezoneInput" placeholder="Timezone (Number)" aria-label="Enter timezone (must be a number input)">
+                <input type="text" id="windSpeedInput" placeholder="Wind Speed (Number)" aria-label="Enter wind speed (must be a number input)">
+                <input type="text" id="humidityInput" placeholder="Humidity (Number)" aria-label="Enter humidity (must be a number input)">
+            </div>
+            <!-- Inputs for Weather Info (Bottom) -->
+            <div class="popup-content-divider" id="WeatherInfoInputsGroup3">
+                <input type="text" id="longitudeInput" placeholder="Longitude (Number)" aria-label="Enter longitude (must be a number input)">
+                <input type="text" id="latitudeInput" placeholder="Latitude (Number)" aria-label="Enter latitude (must be a number input)">
+                <input type="text" id="manualCityInput" placeholder="City (Text)" aria-label="Enter city name (must be a text input)">
+                <input type="text" id="manualStateInput" placeholder="State (Text)" aria-label="Enter state abbreviation (must be a text input)">
+                <input type="text" id="manualCountryInput" placeholder="Country (Text)" aria-label="Enter country abbreviation (must be a text input)">
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="navBarFooterDefaults" id="footerContent">
+        <div class="topFooterItems">
+            <a class="footerItem transitionableItem" href="https://github.com/RPI-ITWS/ITWS-2110-F24-litcha" target="blank"><i class="fa-brands fa-github fa-3x"></i></a>
+            <a class="footerItem transitionableItem" href="https://github.com/RPI-ITWS/" target="blank"><img src="./resources/itws_logo.png" alt="ITWS Logo"></a>
+        </div>
+        <div class="BottomFooterItems">
+            <p class="footerItem">Last updated on November 14, 2024</p>
+        </div>
+    </div>
+    <!-- Initial Informational popup -->
+    <div class="info-popup-startup" id="infoPopupStartup">
+        <div class="info-popup-content">
+            <span class="close-info-popup" onclick="closePopup(infoPopupStartup)" aria-label="Close Informational Tooltip">&times;</span>
+            <p class="infoTitle">Welcome to Alex's Live Weather Application!</p>
+            <p>Here you can find current and active weather information for a given location,</p>
+            <p>as well as learn a little bit about a random pokemon!</p>
+        </div>
+    </div>
+    <!-- Location Informational popup -->
+    <div class="general-info-popup" id="locationPopup">
+        <div class="info-popup-content">
+            <span class="close-info-popup" onclick="closePopup(locationPopup)" aria-label="Close Location Data Tooltip">&times;</span>
+            <p class="infoTitle">Location Information</p>
+            <p>Here you will find information regarding the last searched location.</p>
+            <p>This includes the name of the location, its longitude, and latitude.</p>
+        </div>
+    </div>
+    <!-- Pokemon Data Informational popup -->
+    <div class="general-info-popup" id="pokemonDataPopup">
+        <div class="info-popup-content">
+            <span class="close-info-popup" onclick="closePopup(pokemonDataPopup)" aria-label="Close General Pokemon Data Tooltip">&times;</span>
+            <p class="infoTitle">General Pokemon Information</p>
+            <p>Here you can find information regarding the currently displayed pokemon.</p>
+            <p>This includes its name, elemental types, pokedex number, height, weight, and abilities.</p>
+            <p>The elemental types result in certain advantages and weakness against other pokemon.</p>
+            <p>The pokedex number is the ID which pokemon are assigned to differentiate them from one another.</p>
+            <p>The abilities provide special effects in battle to pokemon.</p>
+            <p>Some abilities are activated when a certain condition is met, or when the pokemon first enters battle.</p>
+        </div>
+    </div>
+    <!-- Pokemon Image Informational popup -->
+    <div class="general-info-popup" id="pokemonImagePopup">
+        <div class="info-popup-content">
+            <span class="close-info-popup" onclick="closePopup(pokemonImagePopup)" aria-label="Close Pokemon Image Tooltip">&times;</span>
+            <p class="infoTitle">Pokemon Image</p>
+            <p>Here you can find an image of the currently displayed pokemon.</p>
+        </div>
+    </div>
+    <!-- Weather Data Informational popup -->
+    <div class="general-info-popup" id="weatherDataPopup">
+        <div class="info-popup-content">
+            <span class="close-info-popup" onclick="closePopup(weatherDataPopup)" aria-label="Close General Weather Data Tooltip">&times;</span>
+            <p class="infoTitle">General Weather Information</p>
+            <p>Here you can find current and active weather information for the current location.</p>
+            <p>This includes the weather forecast, air temperature, minimum temperature,</p>
+            <p>maximum temperature, feels like temperature, timezone, windspeed, and humidity.</p>
+        </div>
+    </div>
+</body>
+</html>

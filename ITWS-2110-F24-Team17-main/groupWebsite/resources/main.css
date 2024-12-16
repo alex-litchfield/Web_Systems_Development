@@ -1,0 +1,262 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.2em;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #a6a6a6;
+}
+
+#landing {
+  position: relative;
+  background-image: url('photos/rpi-empac.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(24, 1, 1, 0.477);
+  z-index: 1;
+  animation: landing_zoom 15s infinite ease-in-out;
+}
+
+
+/* Creates the zoom effect for the background image in landing_zoom */
+@keyframes landing_zoom {
+  0% {
+    background-size: 110%; /* Background begins at normal size */
+  }
+  50% {
+    background-size: 120%; /* Background zooms in */
+  }
+  100% {
+    background-size: 110%; /* Returns background to normal size */
+  }
+}
+
+/* Adds the background color over the background image */
+#landing::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 1, 1, 0.477);
+  z-index: 1;
+}
+
+img {
+  position: relative;
+  z-index: 3;
+  width: 70%;
+  height: auto;
+}
+
+.section h1, h3, p, button {
+  position: relative;
+  z-index: 2;
+
+}
+
+.linkbutton {
+  padding: 1.5em 2em;       
+  font-size: 1em;        
+  cursor: pointer;
+  border-radius: 0.3em;
+  border: solid;
+  border-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  min-width: 25vh;
+}
+
+.linkbutton:hover {
+  background-color: #f7f797;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8em 0.8em;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 0.2em;
+  border: solid;
+  border-color: black;
+  background-color: white;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+#landingImage {
+  position: relative;
+  width: 25%;
+  height: auto;
+  z-index: 3;
+  animation: slideLeft 2s forwards;
+  margin-bottom: 30vh;
+  transition: transform 0.3s ease;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30vw);
+  }
+}
+
+#buttonsContainer {
+  position: absolute;
+  transform: translateX(-29.7vw); /* Places button container below the final position of the logo */
+  bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  z-index: 3;
+  animation: fadeInButton 2s forwards 1s;
+}
+
+/* Fade-in animation for buttons */
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for content box */
+@keyframes fadeInBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+
+.contentBox {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 3;
+  animation: fadeInBox 2s forwards 1s;
+  border: solid;
+  border-color: black;
+}
+
+.innerContentBox {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.iconTitleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.iconTitleBox h2 {
+  font-size: 200%;
+  margin-top: 0;
+  z-index: 2;
+}
+
+.iconTitleBox i {
+  transition: transform 0.2s ease-in-out;
+  z-index: 1;
+  color: black;
+}
+
+.iconTitleBox i:hover {
+  transform: scale(1.5);
+}
+
+.popup {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  color: black;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+  z-index: 4;
+  width: 30%;
+  min-height: 40%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid;
+  border-color: black;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure the popup becomes visible on hover */
+.iconTitleBox:hover .popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Make the popup visible when hovering over an icon */
+.i:hover + #popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup p {
+  font-size: 150%;
+}
+
+/* Disable animations by default */
+.no-animate * {
+  animation: none !important;
+}

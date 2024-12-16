@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../resources/photos/favicon_io/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <script src="../resources/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <div id="feedback-container">
+        <h1>Do You Have Any Feedback For Us?</h1>
+        <a href="../index.php" id="returnhome">Click Here to Return Home</a> 
+        <p>Questions marked with an (*) are required.</p>
+        <form id="feedbackForm" action="feedback.php" method="post">
+            <p>Enter Your Full Name: *</p>
+            <input class="inputBar" name="fullName" type="text" placeholder="Full Name" required value="">
+            <p>Your Email Address: *</p>
+            <input class="inputBar" name="email" type="text" placeholder="Email" required value="">
+            <p>Is this your first time visiting our website? *</p>
+            <div>
+               <input type="radio" id="yes" name="firstVisit" value="Yes">
+               <label for="yes">Yes</label>
+               <input type="radio" id="no" name="firstVisit" value="No">
+               <label for="no">No</label>
+            </div>
+            <p>Why did you visit our site?</p>
+            <input class="inputBarBig" name="whyVisit" type="text" placeholder="...">
+            <p>Rate user friendliness from 1 to 5 (1 is the worst and 5 is the best). *</p>
+            <div>
+               <input type="radio" id="one" name="rating" value="1">
+               <label for="one">1</label>
+               <input type="radio" id="two" name="rating" value="2">
+               <label for="two">2</label>
+               <input type="radio" id="three" name="rating" value="3">
+               <label for="three">3</label>
+               <input type="radio" id="four" name="rating" value="4">
+               <label for="four">4</label>
+               <input type="radio" id="five" name="rating" value="5">
+               <label for="five">5</label>
+            </div>
+            <p>Any other comments?</p>
+            <input class="inputBarBig" name="comments" type="text" placeholder="...">
+            <input id="feedbackBtn" type="submit" value="Submit Feedback Form" name="feedback">
+        </form>
+    </div>
+</body>

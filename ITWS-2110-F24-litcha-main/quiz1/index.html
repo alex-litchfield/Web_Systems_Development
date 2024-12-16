@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Live Weather App using MySQL and PHP</title>
+    <link rel="stylesheet" href="./resources/lab3.css">
+    <script src="./resources/lab3.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navBar">
+        <p id = "titleName">Live Weather Application</p>
+        <button type="button" id="pokemonFactBtn" onclick="fetchPokeInfo()">Click for New Pokemon Fact</button>
+        <button type="button" id="openPopupBtn" onclick="openPopupMenu()">Click to Manually Edit Data</button>
+        <div class= "locationSearchBar" id="locationSearchBarItems">
+            <input type="text" id="cityInput" placeholder="City" required>
+            <input type="text" id="stateInput" placeholder="State" required>
+            <input type="text" id="countryInput" placeholder="Country Abbreviation" required>
+            <button type="locationSearch" id="locationSearchBtn" onclick="searchLocation()">Search</button>
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div id="pageContent">
+        <div id="upperBox">
+            <div id="upperBoxInfoContainer">
+                <p class="locationInfoDetails" id="cityName"></p>
+                <p class="locationInfoDetails" id="cityLongitude"></p>
+                <p class="locationInfoDetails" id="cityLatitude"></p>
+            </div>
+            <div id="pokemonBox">
+                <div id="pokemonInfoContainer">
+                    <p class="pokemonInfoDetails" id="pokemonInfoTitle">Random Pokemon Fact!</p>
+                    <p class="pokemonInfoDetails" id="pokemonName"></p>
+                    <p class="pokemonInfoDetails" id="pokemonType"></p>
+                    <p class="pokemonInfoDetails" id="pokemonDexNumber"></p>
+                    <p class="pokemonInfoDetails" id="pokemonHeight"></p>
+                    <p class="pokemonInfoDetails" id="pokemonWeight"></p>
+                    <p class="pokemonInfoDetails" id="pokemonAbilities"></p>
+                </div>
+                <div id="pokemonPictureBox">
+                    <img id="pokemonImage" src="./resources/loading-gif.gif" alt="Pokemon Image">
+                </div>
+            </div>
+        </div>
+        <div id="weatherInfo">
+            <div id="weatherInfoLeft">
+                <p class="weatherInfoDetails" id="weatherForecast"></p>
+                <p class="weatherInfoDetails" id="airTemp"></p>
+                <p class="weatherInfoDetails" id="minTemp"></p>
+                <p class="weatherInfoDetails" id="maxTemp"></p>
+            </div>
+            <div id="weatherInfoRight">
+                <p class="weatherInfoDetails" id="feelsLikeTemp"></p>
+                <p class="weatherInfoDetails" id="timezone"></p>
+                <p class="weatherInfoDetails" id="windSpeed"></p>
+                <p class="weatherInfoDetails" id="humidity"></p>
+            </div>
+        </div>
+        <div id="conversionBox">
+            <div id="conversionBoxLeft">
+                <p class="coversionInfoDetails" id="inputCountryName"></p>
+                <p class="coversionInfoDetails" id="inputConversion"></p>
+            </div>
+            <div id="conversionBoxRight">
+                <p class="coversionInfoDetails" id="outputCountryName"></p>
+                <p class="coversionInfoDetails" id="outputConversion"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Menu -->
+    <div class="popup" id="popupForm">
+        <div class="popup-content">
+            <div id="popup-top-container">
+                <div class="popup-header-top-divider" id="popup-button-left">
+                    <button class="submit" id="submitBtn" onclick="submitPopupMenuInfo()">Submit</button>
+                </div>
+                <div class="popup-header-top-divider" id="popup-header-text-container">
+                    <div class="popup-header-top">Edit Data Fields</div>
+                    <div>Blank fields leave original data unchanged</div>
+                    <div class="popup-header-mini">"City", "State", and "Country"</div>
+                    <div>Fields will change as one</div>
+                </div>
+                <div class="popup-header-top-divider" id="popup-button-right">
+                    <button class="cancel" id="cancelBtn" onclick="closePopupMenu()">Cancel</button>
+                </div>
+            </div>
+            <div class="popup-header-subtitle">Pokemon Data</div>
+            <!-- Inputs for Pokemon Info (Top) -->
+            <div class="popup-content-divider" id="pokemonInfoInputsGroup1">
+                <input type="text" id="pokemonNameInput" placeholder="Pokemon Name (Text)">
+                <input type="text" id="pokemonTypeInput" placeholder="Pokemon Type (Text)">
+                <input type="text" id="pokemonHeightInput" placeholder="Pokemon Height (Number)">
+                <input type="text" id="pokemonWeightInput" placeholder="Pokemon Weight (Number)">
+            </div>
+            <!-- Inputs for Pokemon Info (Bottom) -->
+            <div class="popup-content-divider" id="pokemonInfoInputsGroup2">
+                <input type="text" id="pokemonDexNumberInput" placeholder="Pokedex Number (Number)">
+                <input type="text" id="pokemonAbilitiesInput" placeholder="Pokemon Abilities (Text)">
+                <input type="text" id="pokemonImageInput" placeholder="Pokemon Image (Link)">
+            </div>
+            <!-- Inputs for Weather Info (Top) -->
+            <div class="popup-header-subtitle">Weather Data</div>
+            <div class="popup-content-divider" id="WeatherInfoInputsGroup1">
+                <input type="text" id="longitudeInput" placeholder="Longitude (Number)">
+                <input type="text" id="latitudeInput" placeholder="Latitude (Number)">
+                <input type="text" id="manualCityInput" placeholder="City (Text)">
+                <input type="text" id="manualStateInput" placeholder="State (Text)">
+                <input type="text" id="manualCountryInput" placeholder="Country (Text)">
+                <input type="text" id="feelsLikeTempInput" placeholder="Feels Like Temp (Number)">
+                <input type="text" id="timezoneInput" placeholder="Timezone (Number)">
+            </div>
+            <!-- Inputs for Weather Info (Middle) -->
+            <div class="popup-content-divider" id="WeatherInfoInputsGroup2">
+                <input type="text" id="windSpeedInput" placeholder="Wind Speed (Number)">
+                <input type="text" id="humidityInput" placeholder="Humidity (Number)">
+                <input type="text" id="weatherForecastInput" placeholder="Weather Forecast (Text)">
+                <input type="text" id="airTempInput" placeholder="Air Temperature (Number)">
+                <input type="text" id="minTempInput" placeholder="Min Temperature (Number)">
+                <input type="text" id="maxTempInput" placeholder="Max Temperature (Number)">
+            </div>
+            <!-- Inputs for Conversion Info -->
+            <div class="popup-header-subtitle">Conversion Data</div>
+            <div class="popup-content-divider" id="ConversionInfoInputs">
+                <input type="text" id="conversionCountryFromInput" placeholder="Origin Country (Text)">
+                <input type="text" id="conversionCountryToInput" placeholder="Destination Country (Text)">
+                <input type="text" id="currencyToConvertFromInput" placeholder="Money to Convert (Number)">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

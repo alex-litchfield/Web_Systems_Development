@@ -1,0 +1,152 @@
+Lab 4 README
+
+Subset of lab3: 
+    The subset of lab3 for this was maintaining all existing functionality and having a generally similar website structure (through HTML and CSS) to that of lab3. For example, font sizes, fonts, font type, colors, and button sizes may not match.
+
+Worklog: 
+
+    As I began the lab, I decided that giving ChatGPT everything at once would we much too difficult for it. I gave it instructions on how to make a basic replica of my lab3 navbar. I then had to provide it my file structure so that the pages would link correctly. Next, I provided it a description of the rest of the basic page layout, such as where to display data. After several attempts of correcting the AI on the page layout, I instructed it on how to create the popup form layout for the manual data input. It made a beautiful popup on the first try but ended up completely ruining the rest of the normal page layout. After a long set of back and forth prompts it accomplished its goal. I then instructed it on how to create an SQL file that created and handled the database structure. The AI did this perfectly, so I then instructed it to create a handling of the PokeAPI data, which included calling the API, storing it in the data tables using PHP, fetching it from the data tables using PHP, and displaying it dynamically. This was my first major roadblock using the AI. After fixing some basic CSS and linking issues, I repeatedly tried to explain to the AI that it needed to not only be able to display the data on startup, but also whenever a button was clicked. Eventually after explaining the approach it various methods it figured it out. I then had to instruct the AI on how to fetch the weatherAPI data using the HTML Geolocation API. Despite being in concept similar to the fetching of the PokeAPI information, the AI struggled with creating correct PHP code, correct Javascript code, and continued to attempt to modify existing code that was unrelated to the task at hand. On many occassions I had to specificy that it could not modify unrelated code bits and had to display the entire file's code. ChatGPT now seems to give users a limited number of free uses for its more advanced model before running into a cooldown period, where it begins to switch to a dumber model. I ran into this at several points, which could explain why I kept running into roadblocks that didn't seem to make sense based on what the AI was able to do just a few prompts prior. After it completed the weatherAPI information fetching, I needed it to modify the code to allow manual editing by the user of the displayed information. The AI was able to complete this with a minor mistake, which I recognized after reviewing the code and instructed it on how to fix it. It would also randomly swap indexes of items in arrays that it would generate, which took me some time to notice and instruct on how to fix. The last major functionality to tackle was the weatherAPI search functionality. Users needed to be able to search a location and have that information be displayed and override any existing information. It generated some code which I could tell had some structural problems so I informed the AI of these issues. I also had the AI create a background image of clouds and after 2 attempts found one that I liked. I told it to put it as the background among other CSS adjustments which went fairly smoothly. Finally, I provided it a few more instructions on basic CSS changes to enhance the look of the website and did a code snippet at the end. I needed it to update the password and username of the PHP files to access the database on my VM, so I told it how to do that and copied this code over the old part in each PHP file.
+
+Citations:
+
+1. https://chat.openai.com/ 
+2. https://www.geeksforgeeks.org/how-to-create-a-popup-form-using-html-css-and-javascript/
+3. https://www.w3schools.com/howto/howto_js_popup_form.asp
+
+ChatGPT Prompts (1 being the first one provided in the conversation and 57 being the last)
+
+1. i need you to make to make a webpage using html, css, and javascript. On this page, there should be a purple navbar that has from left to right: the title "Live Weather Application", a blue button that says "Click for new pokemon fact", a blue button that says "Click to manually edit data", and a form that contains 3 text inputs for city, state, and country, followed by a blue "search button". Then, blue the navbar there should be a blue background
+
+2. make sure the pages link properly. the index.html will be in a folder WITH a resources folder, and in that is the style.css and the js file
+
+3. In the section with the blue box, i need there to a box on the top left that takes about a 4th of the top of the blue section. Then to the right of it have a space that separates it with another box. This box also takes up about a 4th of the top of the box. Then to the right of that there should another box that takes up a 4th of the top, this time with no space separating it from the previous box. Below all three of these boxes should be a final box that takes up 2/3 of the bottom of the blue section
+
+4. Make the background of each box transparent and have a black border around it. Also add a black border to the bottom of the navbar. In the top left box, please but inside at the top the bold text "Troy, US", and centered in the middle of the box the text "Longitude: -73.6904" and below that the text "Latitude: 42.7291". In the middle upper box, put at the top the text "Random Pokemon Fact!". In a column ordering, put the following text below it inside the box: "Name: Komala", "Type(s): Normal", "Pokedex Number: 775", "Height: 40 cm", "Weight: 19.9 kg", Abilities: "Comatose". In the bottommost box, put the following text in a column format on the left side of the inside of the box: "Weather Forecast: Clouds", "Air Temperature: 41.83 F", "Minimum Temperature: 40.01 F" , "Maximum Temperature: 43.65 F". On the right side of the inside of the box, put in a column order the following text: "Feels Like Temperature: 35.33 F", "Timezone -4:00 UTC", "Wind Speed: 11.5 Mph", and "Humidity: 84%". In the top right box, put this image centered and scaled to fit inside the existing box:
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/775.png
+
+5. please make the image 50% smaller in width and height from what it currently is
+
+6. in the css, make sure that the height is set to "auto". Also, make sure that the top 3 boxes in the blue section are centered in the top portion of the screen. Increase the distance from the edges of the page for the bottom box by 500% each
+
+7. Return the distance between the top grouping of boxes and the bottom box to what it was before. Keep the change in the distance on the side of the bottom box. Please make the rightmost 2 boxes on the top have the same size and width
+
+8. Upon clicking the "click to manually edit data" button, there should be a popup menu that appears on the screen, which takes up the max height of the screen and has an equal width. In the top left of the popup, there should be a big blue "Submit button", which closes the popup. On the top right of the popup, there should be a big red "cancel" button. Between them there should be the centered text "Edit Data Fields" in big bold font. Below all of this should be a slighter small header "Pokemon Data", which is centered from left to right. Below that should be 7 input text boxes in a form. The first 4 inputs should be from right to left: "Pokemon Name (Text)", "Pokemon Type (text)", "Pokemon Height (Number)", and "Pokemon Weight (Number)". Below these 3 should be 3 more inputs in the same form, which should also be centered from left to right. These are "Pokedex Number (Number)", "Pokemon Abilities (Text)", "Pokemon Image(Link)". Below this should be a header that looks the same as "Pokemon Data" header, except it says "Weather Data". This should also be centered. Below that should be a form containing 13 text inputs. The first 4 inputs should be directly below the "Weather Data" header and are "Weather Forecast (Text)", "Air Temperature: (Number)", "Min Temperature (Number)", and "Max Temperature (Number)". These should all be centered from left to right. Below these should be another 4 input fields: "Feels Like Temp (Number)", "Timezone (Number)", "Wind Speed (Number)", "Humidity (Number). These should all be centered from left to right. Finally, below these 4 should be the following 5 input fields: "Longitude (Number)", "Latitude (Number)", "City (Text)", "State (Text)", and "Country (Text)". These should also all be cenetred from left to right
+
+9. The popup looks good, but you completely ruined the styling from the normal part of the page. Please return that part to what it was before. I only needed you to make the popup section
+
+10. This is much better. Remember the left column items in the bottom box must actually be on the inside left of the box and the right column items must be on the inside right of the box. 
+
+11. You still didn't do it. You need to have the items of text "Weather Forcast: Clouds", "Air Temperature: 41.83 F", "Minimum Temperature 40.01 F", and "Maximum Temperature 43.65 F" on the LEFT of the inside of the bottom box. The items "Feels like Temperature: 35.33 F", "Timezone: -4:00 UTC", "Wind Speed: 11.5 Mph", and "Humidity: 84%" must be on the RIGHT of the inside of the bottom box. You still have them going down as one column
+
+12. Perfect! Just decrease the distance between the bottom box and the top boxes. Also increase the spacing between each item of text in the columns inside the bottom box. Also ensure that each box on the top section is of equal height and width to the rightmost box on the top
+
+13. You did not at at all decrease the distance between the top boxes and the bottom box. You also decreased the size of the boxes at the top which is not what i said to do
+
+14. you still have the top boxes extremely small. Why did you shrink them? Bring them to their original sizes before you shrank them
+
+15. make the top right box and the top middle box have the same heigh and width AS THE RIGHT TOP BOX DOES ALREADY IN THIS CSS.
+
+16. Increase the width and height of the boxes on the top by 200%
+
+17. Good. Now decrease the height of all the top boxes by 50%
+
+18. Decrease the size of all the items in the navbar a little bit except for the "Live weather application" text so that there is more room
+
+19. now i need you to make me an sql file that will create a database and 2 tables. For table one, which keeps track of pokemon data, you will need to keep track of the pokemon name, pokemon type, pokedex number, pokemon height, pokemon weight, pokemon abilities, and pokemon image url. The second data will keep track of weather data. This table tracks the weather forecast, the location city name, location state name, location country name, timezone, humidity, wind speed, air temperature, minimum temperature, maximum temperature, the feels like temperature, latitude, and longitude.
+
+20. For each of the items that i provided earlier in text format in the html, these should instead be dynamically placed into the html via the js file. Lets start with the pokemon data. This is the link to the poke api and how you call it:
+https://pokeapi.co/api/v2/pokemon/${randomDexNumber}/
+where randomDexNumber is a randomly decided upon pokedex number. Upon loading the webpage, this random dex number should be decided and used to call the api. It should then take the following data from the api: pokemon name, pokemon type, pokedex number, pokemon abilities, pokemon height, pokemon weight, and the url to the pokemon image. The image should be that of the front default official artwork for sprites. This information needs to then be placed into the pokemon data table using php, and then you also need to use php to retrieve the information from the table and display it on the webpage in the correct text spot (again, replacing existing text dynamically)
+
+21. Do not forget to keep the existing functionality that you previously gave me for the buttons in the js
+
+22. please fix the linking of php files in the js. Remember, every file is inside the resources folder EXCEPT the index.html
+
+23. Increase the height of the boxes at the top by 20% in the html and css. Also please decrease the distance between the top boxes and bottom box
+
+24. Remove the space between the top boxes and the bottom boxes. also you failed to change the size of the upper boxes at all
+
+25. Try adjusting the spacing from within the parent that holds the top boxes and bottom boxes to remove the space between the top and bottom boxes
+
+26. okay, lets remove any adjustments to the height of the boxes on the top row. However, lets increase the width of all the boxes by 30%
+
+27. Lets decrease the width of the bottom box by about 30% and center the content inside vertically while also increasing the font of the text a little bit
+
+28. Lets increase the size of the text inside the bottom box a little more. Lets also have the text in the top left box match that size. Finally, lets decrease the size of everything on the navbar except for the text "Live weather application" to give it some room
+
+29. You forgot to increase the size of the text in the top left box, it still looks the same. You also should space the text out a little more vertically in the bottom box
+
+30. ONLY CHANGE THE POKEMON BUTTON LINE IN THE HTML. Have it call the fetching pokemon data function from within the html on click! THen make this function using ONLY the existing code in js file so that it is called on startup and when the button is clicked
+
+31. Make every input in the html that is within forms of type text
+
+32. Now, upon startup, the website must request the location of the user via the browser using html geolocation api. It should then use this information to call this API key:
+https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${openWeatherMapAPIKey}&units=imperial
+where the api key is: 755b0ebbfecf791d3a8f83caad2110fc
+Upon the calling of the api, the following data should be taken from the ai: location City name, air temperature, weather forecast, minimum temperature, maximum temperature, feels like temperature, wind speed, timezone, humidity. You should this information into the database in the weather table using php. you also should put the longitude and latitude from the geolocation into the database. Then, you must place that information from the weather table using php and display it in the correct text spot (replacing existing text dynamically)
+
+33. Within the json stringify, you need to apply the variables to the database. you have not yet
+
+34. Each item on display is show "undefined". I can also see in php my admin that no data was actually sent to the database table
+
+35. please order the items in insert_weather to match the sql file
+
+36. "ssssiddddddd", this line is wrong
+
+37. in the js you once again failed to provide items to actually put items in the json stringify for the weather table
+
+38. in the bottom box html, please remove any text in each item that extends past the ": ". For example, if it said "Weather forecast: cloudy", I would only want to see "Weather forecast: "
+
+39. Thank you. Now please make the text items that say "Longitude: -73.6904" and "Latitude: 42.7291" just say "Longitude: " and "Latitude "
+
+40. inside the bold tag of the top left box, replace this line with the dynamically loaded name of the city and country in this format: "city, country"
+
+41. You have the latitude and longitude inside the weather table. access this data and display it on the "longitude: " and "latitude: " text parts from the html dynamically (you can change the html and the js for this if need be)! DO NOT CHANGE ANYTHING ELSE ABOUT THE CODE AT ALL. Make sure to show me the entire js file
+
+42. in the "location-name" item in html, remove the text "city, country" and replace it with the dynamically loaded city name and country name. If the city was "Troy" and the country was "US", it should be shown as a string that looks like: "Troy, US"
+
+43. Please make the "pokemon-fact-btn" call a function that fetches the pokemon data. This function should do what the page does on startup. That is, call the api, get the information, send it to the table via php, retrieve it using php, and display it
+
+44. Perfect! now in the insert php files for both pokemon and weather, i need you to make it so that all entries in the table are deleted and THEN the new entry is added. This should ensure that there is always only 1 item in the table at a time.
+
+45. For all of the text input forms inside the hidden popup, you need to make it so that each input, ONLY IF PROVIDED, is sent to the database and replaces the existing item. For example, if i have an existing row of data in the table for pokemon and am only provided with pokemon height, you would need to send to the table all the previous information that was taken by the api EXCEPT for the height, where you use the height given by the input field. This data, once sent to the table, must all be displayed on the webpage. YOU SHOULD ONLY NEED TO EDIT HTML OR JS. NOTHING ELSE
+
+46. show what the entire js file should like like with this change
+
+47. You accomplished the task, however, there is one issue. When the information is submitted, two things happen. The first is the correct thing, which sends the old info and the new data from the input overriding its respective data point. The second thing is that it calls the api again and adds a second new entry into the table. This second thing should not be happening
+
+48. I see the issue. instead of calling fetchPokemonData and fetchWeatherData, you should be using the get_weather and get_pokemon php files to retrieve data. Then you must display it as you did previously on the webpage. Do this in the place of these 2 function calls ONLY at the end of the updateData() function!. Make sure to provide the entire js file!
+
+49. in the html switch the 2 lines that hold "Longitude (Text)" and "Latitude (Text)"
+
+50. In the update data function, in the section where you gather weather data, you use weatherForm[some number] for each item. You use 9 for city, 8 for state, and 10 for country. However, this is incorrect. You should be 10 for city, 11 for state, and 12 for country
+
+51. For each input of type text in html, replace the word "Text" with "Decimal" if there should be a decimal or "Number" if there should be an integer
+
+52. I need you to modify the html so that the search-form items can be used for input retrieval in the js. I will also need to be able to have the search button call a function that fetches weather data based on location and not longitude/latitude. Again ONLY modify the items in this form
+
+53. please keep the blue-button class for the button and also remove the header
+
+54. Okay this javascript is very close to perfect so I only want you to modify the "searchWeatherByLocation" function. Right now, upon fetching the data you immediately display it. I need you to send it to the weather table using insert_weather.php and fetch it from the table using get_weather.php. THEN you can display it!
+
+55. please add a sizable margin between the navbar and the top row of boxes. also increase the border size for everything that has an existing border already
+
+56. Also add a sizable margin directly above the bottom box
+
+57. Generate me an image of clouds for the background of my website
+
+58. generate me a new one that is more pretty and vibrant!
+
+59. Make this newly generated image, called "cloud-img-ai.webp", be the background image for the website. Remove the background color for the content box and please make the navbar a lighter purple and transparent. You also should make the background of the each of the top row boxes and the bottom box be white and transparent
+
+60. Make the navbar and boxes more transparent. Also increase the border sizes and make the border radius rounder
+
+61. Increase the padding size of the "click for new pokemon fact" and "click to manually edit data" and make the corners of all the buttons a little rounder
+
+62. Increase the font size of all the text in the top middle box a little bit and the top left box a lot
+
+63. Try changing the top middle box title to 1.5rem and the paragraph to 1.2rem. also change the item with "location-name" as a div to a p tag
+
+64. Okay now increase the size of the location-name item to be around 1.5x bigger font size than the coordinate p items. Also boldface it
+
+65. You provided me with a username and password in my php files, please correct the username to be "phpmyadmin" and the password to be "kev73bto&"

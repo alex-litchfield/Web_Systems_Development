@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+#healthContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0 5% 0;
+}
+#healthApproval {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+}
+.healthApprovalItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    margin: 1em 3em 1em 3em;
+    border-color: rgb(235, 73, 73);
+    background-color: white;
+    text-align: center;
+    padding: 1em 2em 1em 2em;
+    width: 60%;
+    border-radius: 6px;
+}
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+}
+button {
+    display: none;
+    width: 80px;
+    background-color: rgb(235, 73, 73);
+    border: none;
+    border-radius: 6px;
+    padding: 3px 3px 3px 3px;
+    margin: 0 8px 0 8px;
+}
+.dropdownDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.healthApprovalItem:hover {
+    transform: scale(1.1);
+}
+.healthApprovalItem:hover .dropdown {
+    display: block;
+}
+.healthApprovalItem:hover button {
+    display: block;
+}
+#clubContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+#clubApproval {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+}
+.clubApprovalItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    margin: 1em 3em 1em 3em;
+    border-color: rgb(235, 73, 73);
+    background-color: white;
+    text-align: center;
+    padding: 1em 2em 1em 2em;
+    width: 60%;
+    border-radius: 6px;
+}
+.dropdown {
+    display: none;
+    text-align: center;
+    padding: 0 1% 0 1%;
+}
+.clubApprovalItem:hover {
+    transform: scale(1.1);
+}
+.clubApprovalItem:hover .dropdown {
+    display: block;
+}
+.clubApprovalItem:hover button {
+    display: block;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgba(235, 73, 73, 0.824);
+}
+.headers {
+    text-align: center;
+}
+.names {
+    text-align: center;
+    font-size: 120%;
+}
+.descriptions {
+    text-align: center;
+}
+.members {
+    min-width: 130px;
+}
+.locations {
+    min-width: 130px;
+    max-width: 150px;
+}
+.dates {
+    min-width: 130px;
+    max-width: 150px;
+}
+.timing {
+    min-width: 90px;
+}
+.dayOfWeek {
+    min-width: 100px;
+}
+#clubApproval:-webkit-scrollbar {
+    width: 2%;
+}
+.deleteApproval {
+    max-width: 20%;
+}

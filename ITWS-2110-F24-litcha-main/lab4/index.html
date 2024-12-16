@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Weather Application</title>
+  <link rel="stylesheet" href="resources/styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1 class="navbar-title">Live Weather Application</h1>
+    <button class="blue-button" id="pokemon-fact-btn" onclick="fetchPokemonData()">Click for new Pokémon fact</button>
+    <button class="blue-button" id="edit-data-btn">Click to manually edit data</button>
+    <form class="search-form">
+        <input type="text" id="city-input" placeholder="City Name (Text)">
+        <input type="text" id="state-input" placeholder="State (Text, Optional)">
+        <input type="text" id="country-input" placeholder="Country Code (Text)">
+        <button type="button" id="search-btn" class="blue-button">Search</button>
+    </form>
+  </div>
+
+  <div class="content">
+    <div class="top-row">
+      <div class="box top-left">
+        <p class="location-name"></p>
+        <div class="coordinates">
+          <p>Longitude: </p>
+          <p>Latitude: </p>
+        </div>
+      </div>
+      <div class="box top-middle">
+        <h3>Random Pokemon Fact!</h3>
+        <p class="pokemon-name">Name: </p>
+        <p class="pokemon-type">Type(s): </p>
+        <p class="pokedex-number">Pokedex Number: </p>
+        <p class="pokemon-abilities">Abilities: </p>
+        <p class="pokemon-height">Height: </p>
+        <p class="pokemon-weight">Weight: </p>
+      </div>
+      <div class="box top-right">
+        <img class="pokemon-image" src="" alt="Pokemon Image">
+      </div>      
+    </div>
+
+    <div class="bottom-box">
+        <div class="left-column">
+            <div>Weather Forecast: </div>
+            <div>Air Temperature: </div>
+            <div>Minimum Temperature: </div>
+            <div>Maximum Temperature: </div>
+        </div>
+        <div class="right-column">
+            <div>Feels Like Temperature: </div>
+            <div>Timezone: </div>
+            <div>Wind Speed: </div>
+            <div>Humidity: </div>
+        </div>
+    </div>
+    
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-header">
+      <button class="submit-btn">Submit</button>
+      <h2>Edit Data Fields</h2>
+      <button class="cancel-btn">Cancel</button>
+    </div>
+
+    <h3>Pokemon Data</h3>
+    <form class="pokemon-form">
+        <input type="text" placeholder="Pokemon Name (Text)">
+        <input type="text" placeholder="Pokemon Type (Text)">
+        <input type="text" placeholder="Pokemon Height (Decimal)">
+        <input type="text" placeholder="Pokemon Weight (Decimal)">
+        <input type="text" placeholder="Pokedex Number (Number)">
+        <input type="text" placeholder="Pokemon Abilities (Text)">
+        <input type="text" placeholder="Pokemon Image (Link)">
+    </form>
+
+    <h3>Weather Data</h3>
+    <form class="weather-form">
+        <input type="text" placeholder="Weather Forecast (Text)">
+        <input type="text" placeholder="Air Temperature (Decimal)">
+        <input type="text" placeholder="Min Temperature (Decimal)">
+        <input type="text" placeholder="Max Temperature (Decimal)">
+        <input type="text" placeholder="Feels Like Temp (Decimal)">
+        <input type="text" placeholder="Timezone (Number)">
+        <input type="text" placeholder="Wind Speed (Decimal)">
+        <input type="text" placeholder="Humidity (Number)">
+        <input type="text" placeholder="Latitude (Decimal)">
+        <input type="text" placeholder="Longitude (Decimal)">      
+        <input type="text" placeholder="City (Text)">
+        <input type="text" placeholder="State (Text)">
+        <input type="text" placeholder="Country (Text)">
+    </form>
+  </div>
+
+  <script src="resources/script.js"></script>
+</body>
+</html>

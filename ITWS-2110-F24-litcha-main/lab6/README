@@ -1,0 +1,124 @@
+For each of the seven lenses in Morville's honeycomb, I will be writing their definitions as we were shown on the in class slides, and information relating them to the lab5 section of my webpage. These will include observations, areas of success, and opportunities for improvement. I will then use the Laws of UX site (https://lawsofux.com/) to figure out which laws map to which lens. Finally, I will implement one area of improvement for each lens and write about it below.
+
+1. Useful - Can have many different definitions, doesn’t just mean utility. “Fun” and “aesthetics” can be useful. Who is going to accomplish a goal, and why it is meaningful to them? There is no point to your product if you don’t fill a need or want:
+
+    Observations: The webpage has functions which allow users to find current weather information regarding their exact location OR one that they search for. Users can find a random pokemon fact on the webpage to enrich their knowledge about the Pokemon World. Finally, users can edit each piece of information through the Manually Edit Data button.
+
+    Areas of success: Information is displayed for readers to access, and is successfully able to retrieve the data requested.
+
+    Opportunities for improvement: Find a way to give first time users an idea of what the purpose of the webpage is.
+
+    Laws of UX that relate to the lens:
+    a. Cognitive Bias
+    b. Pareto Principle
+    c. Parkinson's Law
+
+    Area of improvement implemented: A popup window now appears upon page loadup that introduces the website and its intended usage to users. It can be closed by clicking the small x in the top right corner of the popup.
+
+2. Usable - How will you enable users to achieve their goals? Your product needs to be simple, familiar, and easy to understand. As small a learning curve as possible:
+
+    Observations: The navigation/buttons on the webpage are straightforward and simple enough for first time users to figure out with ease. All functions stated in the "Useful" section above are available to the user and work as intended. While all the information is displayed in groupings, some of these groupings are not labeled.
+
+    Areas of success: The webpage has a simple layout that shows the information from each API request on the webpage in different sections.
+
+    Opportunities for improvement: Labels could be added in the locations that do not already have them. Tooltips for additional support could also be included.
+
+    Laws of UX that relate to the lens:
+    a. Cognitive Load 
+    b. Fitts's Law
+    c. Hick's Law
+    d. Law of Common Region (or findable)
+    e. Law of Proximity (or findable)
+    f. Law of Prägnanz
+    g. Law of Similarity
+    h. Law of Uniform Connectedness
+    i. Miller's Law
+    j. Occam's Razor
+    k. Paradox of the Active User
+    l. Tesler's Law
+    m. Working Memory
+
+    Area of improvement implemented: The label "Current Weather Information" was added to the bottom box that contains weather information about a given location. A popup window now appears upon page loadup that introduces the website and its intended usage to users. It can be closed by clicking the small x in the top right corner of the popup. Additional tooltips were added within each box that displays data. These tooltips explain what the box displays and in the case of the pokemon data, what it means.
+
+3. Findable - The information your users need should be easy to find and easy to navigate. Users should be able to quickly find solutions to their problems. Navigating your apps (aka, the structure of your apps) should make sense:
+
+    Observations: Due to the simple layout, information that the user needs to find is easy to locate.
+
+    Areas of success: All information that is requested from the APIs is presented in on one page, and is grouped in such a way that users can easily distinguish which items are of which categories.
+    
+    Opportunities for improvement: Labels could be added in the locations that do not already have them. Filters could be implemented so users only see the information they want, or otherwise simply highlights said information.
+
+    Laws of UX that relate to the lens:
+    a. Chunking
+    b. Jakob's Law
+    c. Mental Model
+    d. Von Restorff Effect
+    e. Zeigarnik Effect
+
+    Area of improvement implemented: The label "Current Weather Information" was added to the bottom box that contains weather information about a given location.
+
+4. Credible - How trustworthy is your product? Has to do its job well. Has to last (particularly if physical). Content has to be accurate (for the purpose)
+
+    Observations: The webpage is simple and has an academically oriented appearance, which helps provide credibility.
+
+    Areas of success: The language used is clear and professional. Information is organized in an appropriate and professional manner.
+
+    Opportunities for improvement: A footer could be added which provides context for the webpage's existence, which could include references to the original github repo, the class it was made for, or even RPI itself.
+
+    Laws of UX that relate to the lens:
+    N/A
+
+    Area of improvement implemented: Footer is added that provides information about when the specific page was last updated. It also includes links to the ITWS organization on github and the github repo for the webpage itself.
+
+5. Accessible - Design so that users with disabilities can have the same user experience as others:
+    
+    Observations: Webpage lacks many accessibility features besides simple HTML elements.
+    
+    Areas of success: Usage of simple HTML elements allow for users to locate information easier.
+    
+    Opportunities for improvement: ARIA labels could be added to assist screen reader accessibility. High contrast text could be added in place of the standard black font color. Other additions could be added based on the compliance status of the webpage in reference to the Web Content Accessibility Guidelines (WCAG).
+    
+    Laws of UX that relate to the lens:
+    a. Doherty Threshold
+    b. Postel's Law
+
+    Area of improvement implemented: ARIA labels have been added to each input, button, and tooltip on the webpage. I also added a hover mechanic for all items that are not in the navbar. If an text item within the main page content is hovered over, it will become purple and expand slightly. If an image item that is not in the navbar is hovered over, it will expand slightly. Finally, if a text item in the footer is hovered over, it will expand slightly but have no color change. This would serve as contrast to help text stand out from the rest.
+
+6. Valuable - Must deliver value. Lots of different ways that value can be determined:
+    
+    Observations: The webpage provides users with weather information based on a given location and a random pokemon fact as intended. 
+    
+    Areas of success: Users who wish to learn more about specific pokemon or weather data are able to find the data in a quick and simple manner. It is also valuable to me, the developer, since I have gained a better grasp on building a webpage using APIs, databases, and more.
+    
+    Opportunities for improvement: A label could be added somewhere on the webpage which outlines what users should be visiting the webpage for and what value they can gain from it. This could be displayed each time the page is reloaded, and come with a button to hide it should users no longer need to see it.
+    
+    Laws of UX that relate to the lens:
+    a. Selective Attention
+    b. Serial Position Effect
+
+    Area of improvement implemented: A popup window now appears upon page loadup that introduces the website and its intended usage to users. It can be closed by clicking the small x in the top right corner of the popup.
+
+7. Desirable - People like “luxury” or “premium” things. Branding, company/product image, aesthetics, emotional design (evoking positive emotions from users). Why do people always brag about owning Apple products?
+
+    Observations: The webpage has a functional and simple layout, though it could use some additional styling to help it stand out a bit more.
+
+    Areas of success: The design is simple and to the point, which ensures users can get to the information they need in a quick and easy manner.
+
+    Opportunities for improvement: Additional styling that could be implemented would include graphics, a coloring scheme, and a change in the font style. Interactive mouse hover styling could be added to the different elements of the webpage.
+
+    Laws of UX that relate to the lens:
+    a. Aesthetic-Usability Effect
+    b. Flow
+    c. Goal-Gradient Effect
+    d. Peak-End Rule
+
+    Area of improvement implemented: The general font of the page was changed to comic sans. This includes all labels, text, input fields, and buttons. I also added a hover mechanic for all items that are not in the navbar. If an text item within the main page content is hovered over, it will become purple and expand slightly. If an image item that is not in the navbar is hovered over, it will expand slightly. Finally, if a text item in the footer is hovered over, it will expand slightly but have no color change.
+
+Citations:
+
+1. https://lawsofux.com/
+2. https://www.w3.org/WAI/standards-guidelines/wcag/
+3. https://docs.google.com/presentation/d/1lk-5Uv23Lo-O9Jpa-4M9MeD5b2OdI4QTivua5KorxYM/edit#slide=id.g9e9ff4048e_0_359
+4. https://www.w3schools.com/accessibility/accessibility_screen_readers.php
+5. https://www.w3schools.com/accessibility/accessibility_labels.php
+

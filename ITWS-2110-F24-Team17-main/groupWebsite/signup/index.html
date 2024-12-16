@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../resources/photos/favicon_io/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="../resources/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../resources/navbar.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="navbarLeft">
+            <img src="../resources/photos/the_nexus_logo_transparent.png" alt="Nexus Logo">
+            <a href="../">The Nexus @ RPI</a>
+            <a href="../eventPlanner/">Event Hub</a>
+            <a href="../professorPicker/">Professor and Course Reviews</a>
+            <a href="../discussionForum/">Discussion Forum</a>
+            <a href="../health/">Mental Health Resources</a>
+        </div>
+        <div id="navbarRight">
+            <a href="../login/">Sign In</a>
+        </div>
+    </div>
+
+    <div id="signupContainer">
+        <h1>Sign Up to The Nexus @ RPI!</h1>
+        <p>Create a free account or <a href="../login/index.html">Log In Here</a>!</p>
+        <form id="signupForm" action="../resources/php/signup.php" method="post">
+            <input class="inputBar" name="firstName" type="text" placeholder="First Name">
+            <input class="inputBar" name="lastName" type="text" placeholder="Last Name">
+            <input class="inputBar" name="email" type="text" placeholder="Email">
+            <input class="inputBar" name="username" type="text" placeholder="Username">
+            <input class="inputBar" name="password" type="password" placeholder="Password">
+            <input class="inputBar" name="confirmPassword" type="password" placeholder="Confirm Password">
+            <input id="signupButton" type="submit" value="Sign Up!" name="signup">
+        </form>
+    </div>
+</body>

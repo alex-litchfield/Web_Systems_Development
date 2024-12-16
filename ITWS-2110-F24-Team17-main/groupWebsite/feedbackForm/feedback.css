@@ -1,0 +1,86 @@
+#feedback-container {
+   border: 2px solid #ccc;
+   background-color: #f9f9f9;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 40%;
+   height: 40%;
+   margin: auto;
+   margin-top: 40px;
+   padding: 20px;
+}
+
+#feedbackBtn {
+   background-color: #66BB66;
+   width: 75%;
+   padding: 10px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+#feedbackBtn:active {
+   background-color: #008800;
+   transform: scale(0.9);
+}
+
+#feedbackForm {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 2px;
+   width: 80%;
+   margin: auto;
+   padding: 20px;
+}
+
+input[type="radio"] {
+   display: inline-block;
+   vertical-align: middle; 
+   margin-right: 10px; 
+}
+
+.inputBar {
+   width: 80%;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.inputBarBig {
+   width: 80%;
+   height: 50px;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.inputBar:active {
+   transform: scale(0.95);
+}
+
+h1 {
+   text-align: center;
+}
+
+html {
+   width: 100%; 
+}
+
+body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+.error-message {
+   color: red;
+   font-size: 0.8em;
+   display: none;
+   margin-top: 5px;
+}
+.error-icon {
+   color: red;
+   font-size: 1.2em;
+   display: none;
+   margin-left: 5px;
+}

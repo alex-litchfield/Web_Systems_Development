@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../resources/photos/favicon_io/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <script src="../resources/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="../resources/navbar.css">
+
+</head>
+<body>
+    <div id="loginContainer">
+        <h1>Change User Password</h1>
+        <a href="../index.php" id="returnhome">Click Here to Return Home</a> 
+        <form id="resetPass" action="changePass.php" method="post">
+            <p>Enter the Email Associated with your Account:</p>
+            <input class="inputBar" name="email" type="text" placeholder="Email">
+            <p>Enter your Old Password:</p>
+            <input class="inputBar" name="oldPass" type="text" placeholder="Old Password">
+            <p>Enter your New Password:</p>
+            <input class="inputBar" name="newPass" type="text" placeholder="New Password">
+            <p>Confirm your New Password:</p>
+            <input class="inputBar" name="confirmNewPass" type="text" placeholder="Confirm New Password">
+            <input id="loginButton" type="submit" value="Change Password" name="login">
+        </form>
+    </div>
+</body>

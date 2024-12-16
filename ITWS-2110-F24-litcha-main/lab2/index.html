@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2: Live Weather App</title>
+    <link rel="stylesheet" href="./resources/lab2.css">
+    <script src="./resources/lab2.js" defer></script>
+</head>
+<body>
+    <div id="navBar">
+        <p id = "titleName">Live Weather Application</p>
+        <form id="pokemonRoll">
+            <button type="button" onclick="getPokeInfo()">Click for New Pokemon Fact!</button>
+        </form>
+        <form id="searchBar">
+            <input type="text" id="cityInput" placeholder="City" required>
+            <input type="text" id="stateInput" placeholder="State" required>
+            <input type="text" id="countryInput" placeholder="Country Abbreviation" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="pageContent">
+        <div id="upperBox">
+            <div id="upperBoxInfoContainer">
+                <p class="locationInfoDetails" id="cityName"></p>
+                <p class="locationInfoDetails" id="cityLongitude"></p>
+                <p class="locationInfoDetails" id="cityLatitude"></p>
+            </div>
+            <div id="pokemonBox">
+                <div id="pokemonInfoContainer">
+                    <p class="pokemonInfoDetails" id="pokemonInfoTitle">Random Pokemon Fact!</p>
+                    <p class="pokemonInfoDetails" id="pokemonName"></p>
+                    <p class="pokemonInfoDetails" id="pokemonType"></p>
+                    <p class="pokemonInfoDetails" id="pokemonDexNumber"></p>
+                    <p class="pokemonInfoDetails" id="pokemonHeight"></p>
+                    <p class="pokemonInfoDetails" id="pokemonWeight"></p>
+                    <p class="pokemonInfoDetails" id="pokemonAbilities"></p>
+                </div>
+                <div id="pokemonPictureBox">
+                    <img id="pokemonImage" src="./resources/loading-gif.gif" alt="Pokemon Image">
+                </div>
+            </div>
+        </div>
+        <div id="weatherInfo">
+            <div id="weatherInfoLeft">
+                <p class="weatherInfoDetails" id="weatherForcast"></p>
+                <p class="weatherInfoDetails" id="airTemp"></p>
+                <p class="weatherInfoDetails" id="minTemp"></p>
+                <p class="weatherInfoDetails" id="maxTemp"></p>
+            </div>
+            <div id="weatherInfoRight">
+                <p class="weatherInfoDetails" id="feelsLikeTemp"></p>
+                <p class="weatherInfoDetails" id="timezone"></p>
+                <p class="weatherInfoDetails" id="windSpeed"></p>
+                <p class="weatherInfoDetails" id="humidity"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
